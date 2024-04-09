@@ -1,0 +1,16 @@
+.navbar-brand {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 35%;
+    z-index: 1;
+    height: 5vh;
+}
+
+#moon-toggle {
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 68vw;
+}
