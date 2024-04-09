@@ -32,3 +32,21 @@
     top: 0;
     left: 68vw;
 }
+
+/*---------------------------------------------Button */
+
+.button-style {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/*---------------------------------------------Game */
+.grid-container-button {
+  display: grid;
+  justify-content: right;
+  grid-gap: 16px;
+  grid-template-columns: repeat(1, 180px);
+  grid-template-rows: repeat(3, calc(30px / 2 * 3));
+  margin-right: 2vw;
+  margin-top: 40vh;
+}
