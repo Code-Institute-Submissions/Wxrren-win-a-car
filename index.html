@@ -23,26 +23,51 @@
     </header>
 
     <div class="grid-container-button">
-        <button type="button" id="rules-button" onclick="rulesModal()" onmouseover="rulesHover()" onmouseout="rulesNormal()" class="btn btn-info button-style">Rules</button>
-        <button type="button" id="contact-button" onmouseover="contactHover()" onmouseout="contactNormal()" class="btn btn-info button-style">Contact us</button>
+        <button type="button" id="rules-button" onclick="rulesModal()" onmouseover="rulesHover()"
+            onmouseout="rulesNormal()" class="btn btn-info button-style">Rules</button>
+        <button type="button" id="contact-button" onclick="contactModal()" onmouseover="contactHover()"
+            onmouseout="contactNormal()" class="btn btn-info button-style">Contact us</button>
     </div>
-
-    
-    
 
     <div class="rules-modal-container" id="rules-modal">
         <div class="rules-header">
             <div class="rules-title">Example Title</div>
         </div>
-            <div class="rules-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima? Dicta, iste aspernatur. Id autem voluptatum, enim aliquid possimus dolores ratione cumque doloribus nam beatae sint odio sit reiciendis iste?
-                <div class="close-rules"><button type="button" id="close-rules-button" onclick="closeRulesModal()" onmouseover="closeRulesHover()" onmouseout="closeRulesNormal()" class="btn btn-info modal-button-style">Let's get started</button></div>
-            </div>
+        <div class="rules-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima? Dicta, iste aspernatur. Id autem
+            voluptatum, enim aliquid possimus dolores ratione cumque doloribus nam beatae sint odio sit reiciendis iste?
+            <div class="close-rules"><button type="button" id="close-rules-button" onclick="closeRulesModal()"
+                    onmouseover="closeRulesHover()" onmouseout="closeRulesNormal()"
+                    class="btn btn-info modal-button-style">Let's get started</button></div>
+        </div>
     </div>
-   
+
+    <div class="contact-modal-container" id="contact-modal">
+        <div class="contact-header">
+            <div class="contact-title">Get In Touch!</div>
+        </div>
+        <div class="contact-body">
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="query" class="form-label">What is your query?</label>
+                    <textarea class="form-control" id="query" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="close-contact"><button type="button" id="close-contact-button" onclick="closeContactModal()"
+                    onmouseover="closeContactHover()" onmouseout="closeContactNormal()"
+                    class="btn btn-info modal-button-style">Close</button></div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="assets/js/hover.js"></script>
     <script type="text/javascript" src="assets/js/darkMode.js"></script>
     <script type="text/javascript" src="assets/js/rulesModal.js"></script>
+    <script type="text/javascript" src="assets/js/contactModal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
