@@ -7,3 +7,4 @@ function rulesModal() {
 function closeRulesModal() {
     openRules.classList.remove('rules-active');
 }
+
