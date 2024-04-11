@@ -2,6 +2,9 @@
 :root {
     --background-color: #ffffff;
     --text-color: #000000;
+    --rules-modal-color: lightblue;
+    --rules-button-color:  lightblue;
+    --rules-modal-button-color: green;
   }
   
   body {
@@ -13,6 +16,9 @@
   .night-theme {
     --background-color: #000000;
     --text-color: #ffffff;
+    --rules-modal-color: green;
+    --rules-button-color: green;
+    --rules-modal-button-color: lightblue;
   }
   
 /*---------------------------------------------Header */
@@ -38,7 +44,82 @@
 .button-style {
     font-weight: bolder;
     text-transform: uppercase;
+    background: var(--rules-button-color);
+    border: 1px solid black;
+    color: var(--text-color);
 }
+
+.modal-button-style {
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: var(--rules-modal-button-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+/*---------------------------------------------Rules Modal */
+
+.rules-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 10;
+  background: var(--rules-modal-color);
+  color: var(--text-color);
+  width: 500px;
+  max-width: 80%;
+}
+
+
+.rules-active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.rules-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.rules-header .rules-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rules-body {
+  padding: 10px 15px;
+}
+
+.rules-body .close-rules {
+  padding: 10px 15px 15px 10px;
+}
+
+#rules-overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#rules-overlay.rules-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 
 /*---------------------------------------------Game */
 .grid-container-button {
