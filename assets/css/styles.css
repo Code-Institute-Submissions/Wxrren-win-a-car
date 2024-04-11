@@ -20,23 +20,27 @@
     --rules-button-color: green;
     --rules-modal-button-color: lightblue;
   }
+
+  /*--------------------------------------------Fonts */
   
+  #brand-header {
+    text-transform: uppercase;
+  }
 /*---------------------------------------------Header */
-.navbar-brand {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 35%;
-    z-index: 1;
-    height: 5vh;
+
+.brand-nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 45vw;
 }
+
+
 
 #moon-toggle {
     width: 50px;
     cursor: pointer;
-    position: fixed;
-    top: 0;
-    left: 68vw;
+    
 }
 
 /*---------------------------------------------Button */
@@ -71,7 +75,7 @@
   z-index: 10;
   background: var(--modal-color);
   color: var(--text-color);
-  width: 500px;
+  width: 380px;
   max-width: 80%;
 }
 
@@ -82,9 +86,8 @@
 
 .rules-header {
   padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
   border-bottom: 1px solid black;
 }
 
@@ -95,6 +98,7 @@
 
 .rules-body {
   padding: 10px 15px;
+  text-align: center;
 }
 
 .rules-body .close-rules {
