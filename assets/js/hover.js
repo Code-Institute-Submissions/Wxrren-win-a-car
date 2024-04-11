@@ -11,12 +11,22 @@ function logoNormal() {
 function rulesHover() {
     document.getElementById("rules-button").style.fontSize = "150%"
     document.getElementById("rules-button").style.backgroundColor = "red";
-}   
+}  
 
 function rulesNormal() {
     document.getElementById("rules-button").style.fontSize = ""
     document.getElementById("rules-button").style.backgroundColor = "";
 }  
+
+function closeRulesHover() {
+    document.getElementById("close-rules-button").style.fontSize = "150%"
+    document.getElementById("close-rules-button").style.backgroundColor = "red";
+}
+
+function closeRulesNormal() {
+    document.getElementById("close-rules-button").style.fontSize = ""
+    document.getElementById("close-rules-button").style.backgroundColor = "";
+}
 
 function contactHover() {
     document.getElementById("contact-button").style.fontSize = "150%"
