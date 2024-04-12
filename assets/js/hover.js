@@ -60,7 +60,7 @@ function restartGameNormal() {
 // cards hover function
 function card1Hover() {
     document.getElementById("card-1").style.height = "230px"
-    document.getElementById("card-1").style.backgroundColor = "red";
+    document.getElementById("card-1").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-1").style.border = "5px solid black"
 }
 
@@ -73,7 +73,7 @@ function card1Normal() {
 
 function card2Hover() {
     document.getElementById("card-2").style.height = "230px"
-    document.getElementById("card-2").style.backgroundColor = "red";
+    document.getElementById("card-2").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-2").style.border = "5px solid black"
 }
 
@@ -85,7 +85,7 @@ function card2Normal() {
 
 function card3Hover() {
     document.getElementById("card-3").style.height = "230px"
-    document.getElementById("card-3").style.backgroundColor = "red";
+    document.getElementById("card-3").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-3").style.border = "5px solid black"
 }
 
@@ -97,7 +97,7 @@ function card3Normal() {
 
 function card4Hover() {
     document.getElementById("card-4").style.height = "230px"
-    document.getElementById("card-4").style.backgroundColor = "red";
+    document.getElementById("card-4").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-4").style.border = "5px solid black"
 }
 
@@ -109,7 +109,7 @@ function card4Normal() {
 
 function card5Hover() {
     document.getElementById("card-5").style.height = "230px"
-    document.getElementById("card-5").style.backgroundColor = "red";
+    document.getElementById("card-5").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-5").style.border = "5px solid black"
 }
 
@@ -121,7 +121,7 @@ function card5Normal() {
 
 function card6Hover() {
     document.getElementById("card-6").style.height = "230px"
-    document.getElementById("card-6").style.backgroundColor = "red";
+    document.getElementById("card-6").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-6").style.border = "5px solid black"
 }
 
@@ -133,7 +133,7 @@ function card6Normal() {
 
 function card7Hover() {
     document.getElementById("card-7").style.height = "230px"
-    document.getElementById("card-7").style.backgroundColor = "red";
+    document.getElementById("card-7").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-7").style.border = "5px solid black"
 }
 
@@ -145,7 +145,7 @@ function card7Normal() {
 
 function card8Hover() {
     document.getElementById("card-8").style.height = "230px"
-    document.getElementById("card-8").style.backgroundColor = "red";
+    document.getElementById("card-8").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-8").style.border = "5px solid black"
 }
 
@@ -157,7 +157,7 @@ function card8Normal() {
 
 function card9Hover() {
     document.getElementById("card-9").style.height = "230px"
-    document.getElementById("card-9").style.backgroundColor = "red";
+    document.getElementById("card-9").style.backgroundColor = "var(--card-js-hover)";
     document.getElementById("card-9").style.border = "5px solid black"
 }
 
