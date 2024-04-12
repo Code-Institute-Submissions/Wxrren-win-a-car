@@ -47,8 +47,6 @@
   margin-left: 45vw;
 }
 
-
-
 #moon-toggle {
     width: 50px;
     cursor: pointer;
@@ -74,8 +72,6 @@
     border-radius: 5px;
     color: var(--text-color);
 }
-
-
 
 /*---------------------------------------------Rules Modal */
 
@@ -218,18 +214,18 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-left: 45vw;
-  margin-right: 45vw;
+  margin-left: 38vw;
+  margin-right: 38vw;
 }
 
 .card-game-container {
   display: grid;
   justify-content: center;
-  grid-gap: 12px;
+  grid-gap: 30px;
   grid-template-columns: repeat(3, 140px);
   grid-template-rows: repeat(3, calc(140px / 2 * 3));
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -238,9 +234,9 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-left: 40vw;
-  margin-right: 40vw;
-  margin-top: 30vh;
+  margin-left: 38vw;
+  margin-right: 38vw;
+  margin-top: 32vh;
 }
 
 .card {
@@ -249,8 +245,7 @@
   border-radius: 15px;
   background: var(--card-background-color);
   position: relative;
-  transform-style:preserve-3d;
-  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .back {
