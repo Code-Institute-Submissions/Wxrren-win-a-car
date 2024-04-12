@@ -57,3 +57,112 @@ function restartGameNormal() {
     document.getElementById("restart-game-button").style.fontSize = ""
     document.getElementById("restart-game-button").style.backgroundColor = "";
 }
+// cards hover function
+function card1Hover() {
+    document.getElementById("card-1").style.height = "230px"
+    document.getElementById("card-1").style.backgroundColor = "red";
+    document.getElementById("card-1").style.border = "5px solid black"
+}
+
+function card1Normal() {
+    document.getElementById("card-1").style.height = ""
+    document.getElementById("card-1").style.backgroundColor = "";
+    document.getElementById("card-1").style.border = ""
+}
+
+
+function card2Hover() {
+    document.getElementById("card-2").style.height = "230px"
+    document.getElementById("card-2").style.backgroundColor = "red";
+    document.getElementById("card-2").style.border = "5px solid black"
+}
+
+function card2Normal() {
+    document.getElementById("card-2").style.height = ""
+    document.getElementById("card-2").style.backgroundColor = "";
+    document.getElementById("card-2").style.border = ""
+}
+
+function card3Hover() {
+    document.getElementById("card-3").style.height = "230px"
+    document.getElementById("card-3").style.backgroundColor = "red";
+    document.getElementById("card-3").style.border = "5px solid black"
+}
+
+function card3Normal() {
+    document.getElementById("card-3").style.height = ""
+    document.getElementById("card-3").style.backgroundColor = "";
+    document.getElementById("card-3").style.border = ""
+}
+
+function card4Hover() {
+    document.getElementById("card-4").style.height = "230px"
+    document.getElementById("card-4").style.backgroundColor = "red";
+    document.getElementById("card-4").style.border = "5px solid black"
+}
+
+function card4Normal() {
+    document.getElementById("card-4").style.height = ""
+    document.getElementById("card-4").style.backgroundColor = "";
+    document.getElementById("card-4").style.border = ""
+}
+
+function card5Hover() {
+    document.getElementById("card-5").style.height = "230px"
+    document.getElementById("card-5").style.backgroundColor = "red";
+    document.getElementById("card-5").style.border = "5px solid black"
+}
+
+function card5Normal() {
+    document.getElementById("card-5").style.height = ""
+    document.getElementById("card-5").style.backgroundColor = "";
+    document.getElementById("card-5").style.border = ""
+}
+
+function card6Hover() {
+    document.getElementById("card-6").style.height = "230px"
+    document.getElementById("card-6").style.backgroundColor = "red";
+    document.getElementById("card-6").style.border = "5px solid black"
+}
+
+function card6Normal() {
+    document.getElementById("card-6").style.height = ""
+    document.getElementById("card-6").style.backgroundColor = "";
+    document.getElementById("card-6").style.border = ""
+}
+
+function card7Hover() {
+    document.getElementById("card-7").style.height = "230px"
+    document.getElementById("card-7").style.backgroundColor = "red";
+    document.getElementById("card-7").style.border = "5px solid black"
+}
+
+function card7Normal() {
+    document.getElementById("card-7").style.height = ""
+    document.getElementById("card-7").style.backgroundColor = "";
+    document.getElementById("card-7").style.border = ""
+}
+
+function card8Hover() {
+    document.getElementById("card-8").style.height = "230px"
+    document.getElementById("card-8").style.backgroundColor = "red";
+    document.getElementById("card-8").style.border = "5px solid black"
+}
+
+function card8Normal() {
+    document.getElementById("card-8").style.height = ""
+    document.getElementById("card-8").style.backgroundColor = "";
+    document.getElementById("card-8").style.border = ""
+}
+
+function card9Hover() {
+    document.getElementById("card-9").style.height = "230px"
+    document.getElementById("card-9").style.backgroundColor = "red";
+    document.getElementById("card-9").style.border = "5px solid black"
+}
+
+function card9Normal() {
+    document.getElementById("card-9").style.height = ""
+    document.getElementById("card-9").style.backgroundColor = "";
+    document.getElementById("card-9").style.border = ""
+}
