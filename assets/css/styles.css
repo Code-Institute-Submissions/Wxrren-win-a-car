@@ -7,6 +7,7 @@
     --rules-modal-button-color: green;
     --card-background-color: linear-gradient(90deg, rgba(85, 213, 255, 0.8) 20%, rgba(255, 94, 6, 0.8) 100%);
     --card-js-hover: red;
+    --card-js-border-hover: black;
   }
   
   body {
@@ -23,6 +24,7 @@
     --rules-modal-button-color: lightblue;
     --card-background-color: linear-gradient(90deg, rgba(92, 255, 85, 0.8) 20%, rgba(246, 3, 221, 0.8) 100%);
     --card-js-hover: red;
+    --card-js-border-hover: white;
   }
 
   /*--------------------------------------------Fonts */
