@@ -21,7 +21,10 @@ function getRandomIntInclusive(min, max) {
 
 containerArray.forEach((element) => {
     element.addEventListener('click', function () {
-        element.src = images[getRandomIntInclusive(0, images.length)];
+        // Find the .front face div within the clicked card
+        let frontFace = element.querySelector('.front.face');
+        // Change the content of the .front face div
+        frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image">`;
     })
 })
 
