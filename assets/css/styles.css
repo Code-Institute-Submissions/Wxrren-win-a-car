@@ -5,6 +5,7 @@
     --modal-color: lightblue;
     --rules-button-color:  lightblue;
     --rules-modal-button-color: green;
+    --card-background-color: red;
   }
   
   body {
@@ -19,12 +20,19 @@
     --modal-color: green;
     --rules-button-color: green;
     --rules-modal-button-color: lightblue;
+    --card-background-color: purple;
   }
 
   /*--------------------------------------------Fonts */
   
   #brand-header {
     text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
   }
 /*---------------------------------------------Header */
 
@@ -51,6 +59,7 @@
     background: var(--rules-button-color);
     border: 1px solid black;
     color: var(--text-color);
+    border-radius: 10px;
 }
 
 .modal-button-style {
@@ -61,6 +70,8 @@
     border-radius: 5px;
     color: var(--text-color);
 }
+
+
 
 /*---------------------------------------------Rules Modal */
 
@@ -197,4 +208,66 @@
   grid-template-rows: repeat(3, calc(30px / 2 * 3));
   margin-right: 2vw;
   margin-top: 40vh;
+}
+
+.game-buttons-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 45vw;
+  margin-right: 45vw;
+}
+
+.card-game-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 12px;
+  grid-template-columns: repeat(3, 140px);
+  grid-template-rows: repeat(3, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 15px;
+  background: var(--background-color);
+  position: relative;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease-in-out;
+
+}
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background: linear-gradient(90deg, rgba(1, 1, 44, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 0, 1) 100%);
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
 }
