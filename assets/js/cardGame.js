@@ -8,7 +8,7 @@ let container7 = document.getElementById('card-7');
 let container8 = document.getElementById('card-8');
 let container9 = document.getElementById('card-9');
 
-let contaierArray = [container1, container2, container3, container4, container5, container6, container7, container8, container9];
+let containerArray = [container1, container2, container3, container4, container5, container6, container7, container8, container9];
 let images = [
     "assets/images/apple.webp", "assets/images/blueberry.webp", "assets/images/car-winner.webp", "assets/images/chilli.webp", "assets/images/corn.webp", "assets/images/grape.webp", "assets/images/orange.webp", "assets/images/stawberry.webp", "assets/images/watermelon.webp"
 ];
@@ -27,6 +27,8 @@ containerArray.forEach((element) => {
         frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image">`;
     })
 })
+
+//TO DO - Fix issue with images appearing anywhere on the screen instead of on the select card
 
 
 // function to start game
