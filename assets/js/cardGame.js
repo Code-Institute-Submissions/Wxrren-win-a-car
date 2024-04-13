@@ -13,7 +13,8 @@ let images = [
     "assets/images/apple.webp", "assets/images/blueberry.webp", "assets/images/car-winner.webp", "assets/images/chilli.webp", "assets/images/corn.webp", "assets/images/grape.webp", "assets/images/orange.webp", "assets/images/stawberry.webp", "assets/images/watermelon.webp"
 ];
 let selectedCards = [];
-let attempts = 0;
+let restartButtonPressed = [];
+
 
 function startGame() {
 
@@ -38,19 +39,19 @@ function startGame() {
             }
         });
     });
-    
 }
+
 
 function matchCounter() {
     let matchCount = 0;
     for (let i = 0; i < selectedCards.length - 1; i++) {
         for (let j = i + 1; j < selectedCards.length; j++) {
             if (selectedCards[i].querySelector('.front.face img').src === selectedCards[j].querySelector('.front.face img').src) {
-               document.getElementById('matches').innerHTML = ++matchCount;
+                document.getElementById('matches').innerHTML = ++matchCount;
             }
         }
     }
-    if (matchCount === 2) {
+    if (matchCount === 3) {
         winGame();
     } else {
         loseGame();
@@ -58,18 +59,43 @@ function matchCounter() {
 }
 
 function restart() {
-
+    
 }
 
 
-
-//TO DO - Fix issue with images appearing anywhere on the screen instead of on the select card
-
-
-// function to start game
-// array of strings with filed paths
-// function that will generate a random number
-// function that click binds to card to flip the card
-// function that tracks if the cards display match. Turn/attempt ends when 3 cards are selected.
-// function that pops up saying winner if 3 matches are made - generates an email confirmation with an emial API
+// function to start game - Complete
+// array of strings with filed image paths - complete
+// function that will generate a random number - complete
+// function that click binds to card to flip the card - complete
+// function that tracks if the cards display match. Turn/attempt ends when 3 cards are selected. - complete
+// function that pops up saying winner if  matches are made - generates an email confirmation with an emial API
 // function that tracks how many attempts are made. Game over when you reach 5. 
+
+// Flip card functions
+function flipCard1() {
+    container1.classList.add('flip-card');
+}
+function flipCard2() {
+    container2.classList.add('flip-card');
+}
+function flipCard3() {
+    container3.classList.add('flip-card');
+}
+function flipCard4() {
+    container4.classList.add('flip-card');
+}
+function flipCard5() {
+    container5.classList.add('flip-card');
+}
+function flipCard6() {
+    container6.classList.add('flip-card');
+}
+function flipCard7() {
+    container7.classList.add('flip-card');
+}
+function flipCard8() {
+    container8.classList.add('flip-card');
+}
+function flipCard9() {
+    container9.classList.add('flip-card');
+}
