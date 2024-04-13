@@ -102,12 +102,19 @@
           Card game
         -->
 
-        <div class="score-container">
-            <div class="game-info">
-                <p>Matches: <span class="card-match-score"></span></p>
-            </div>
-            <div class="game-info">
-                <p>Attempts: <span class="card-attempts-score"></span></p>
+    <div class="score-container">
+        <p>Matches: <span id="matches">0</span></p>
+        <p>Attempts: <span id="attempts">0</span></p>
+    </div>
+
+    <!--
+          Card game Modals
+        -->
+        <div id="d" class="win-modal-container">
+            <div class="modal-content">
+                <h2>You've won!</h2>
+                <p>Congratulations! You've matched all the cards.<br>You'll receive an email to confirm shortly!</p>
+                <button class="modal-button-style btn btn-info" onclick="location.reload()">Close</button>
             </div>
         </div>
 
@@ -117,7 +124,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-2" onmouseover="card2Hover()" onmouseout="card2Normal()">
@@ -125,7 +131,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-3" onmouseover="card3Hover()" onmouseout="card3Normal()">
@@ -133,7 +138,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-4" onmouseover="card4Hover()" onmouseout="card4Normal()">
@@ -141,7 +145,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-5" onmouseover="card5Hover()" onmouseout="card5Normal()">
@@ -149,7 +152,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-6" onmouseover="card6Hover()" onmouseout="card6Normal()">
@@ -157,7 +159,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-7" onmouseover="card7Hover()" onmouseout="card7Normal()">
@@ -165,7 +166,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-8" onmouseover="card8Hover()" onmouseout="card8Normal()">
@@ -173,7 +173,6 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
         <div class="card" id="card-9" onmouseover="card9Hover()" onmouseout="card9Normal()">
@@ -181,13 +180,12 @@
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face">
-                
             </div>
         </div>
     </div>
 
 
-  
+
 
 
     <div class="game-buttons-container">
