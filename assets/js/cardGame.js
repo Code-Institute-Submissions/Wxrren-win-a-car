@@ -13,13 +13,14 @@ let images = [
     "assets/images/apple.webp", "assets/images/blueberry.webp", "assets/images/car-winner.webp", "assets/images/chilli.webp", "assets/images/corn.webp", "assets/images/grape.webp", "assets/images/orange.webp", "assets/images/stawberry.webp", "assets/images/watermelon.webp"
 ];
 let selectedCards = [];
-let restartButtonPressed = [];
+let attempts = 0;
 
 
 function startGame() {
 
-
-
+    selectedCards = [];
+    document.getElementById('matches').innerHTML = 0;
+    
     function getRandomIntInclusive(min, max) {
         const minCeiled = Math.ceil(min);
         const maxFloored = Math.floor(max);
@@ -33,13 +34,43 @@ function startGame() {
                 frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
+                restart()
                 if (selectedCards.length === 3) {
                     checkMatch();
                 }
             }
+
         });
     });
+
+    function restart() {
+        // Increment attempts count
+        attempts++;
+        // Store the updated attempts count in localStorage
+        localStorage.setItem('attempts', attempts);
+        // Reload the page to restart the game
+        location.reload();
+    }
+    
+    // Check attempts on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve the attempts count from localStorage, or default to 0 if not set
+        attempts = parseInt(localStorage.getItem('attempts')) || 0;
+        // Update the display
+        document.getElementById('attempts').textContent = attempts;
+        // If attempts are 5 or more, show game over and disable the game
+        if (attempts >= 5) {
+            // Show game over message
+            alert('Game Over: You have reached the maximum number of attempts.');
+            // Disable the game
+            document.getElementById('start-game-button').disabled = true;
+            document.getElementById('restart-game-button').disabled = true;
+        }
+    });
+    
 }
+
+
 
 
 function matchCounter() {
@@ -58,9 +89,6 @@ function matchCounter() {
     }
 }
 
-function restart() {
-    
-}
 
 
 // function to start game - Complete
