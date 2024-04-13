@@ -29,7 +29,7 @@ function startGame() {
         element.addEventListener('click', function () {
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
-                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image">`;
+                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
                 if (selectedCards.length === 3) {
