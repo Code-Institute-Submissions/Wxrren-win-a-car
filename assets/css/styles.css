@@ -90,8 +90,8 @@
   z-index: 10;
   background: var(--modal-color);
   color: var(--text-color);
-  width: 380px;
-  max-width: 80%;
+  width: 390px;
+  max-width: 90%;
 }
 
 
@@ -202,6 +202,24 @@
   text-align: center;
 }
 
+/*---------------------------------------------Winning Modal */
+.win-modal-container { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 10;
+  background: linear-gradient(90deg, rgba(1, 1, 44, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 0, 1) 100%);
+  color: white;
+  width: 400px;
+  height: 210px;
+  max-width: 80%;
+  text-align: center;
+}
+
 
 /*---------------------------------------------Game */
 .grid-container-button {
@@ -260,3 +278,7 @@
   color: white;
 }
 
+.front.face {
+  height: calc(140px / 2 * 3); /* Ensure it takes up the full height of the card */
+  width: 140px /* Ensure it takes up the full width of the card */
+ }
