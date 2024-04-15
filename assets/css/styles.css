@@ -220,6 +220,32 @@
   text-align: center;
 }
 
+.winner-active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.winner-header {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.winner-header .winner-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.winner-body {
+  padding: 10px 15px;
+}
+
+.winner-body .close-winner {
+  padding: 10px 15px 15px 10px;
+  text-align: center;
+}
+
+
+
 
 /*---------------------------------------------Game */
 .grid-container-button {
