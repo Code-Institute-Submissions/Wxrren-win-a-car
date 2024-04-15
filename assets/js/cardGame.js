@@ -14,6 +14,7 @@ let images = [
 ];
 let selectedCards = [];
 let attempts = 0;
+let matchCount = 0;
 
 
 function startGame() {
@@ -25,7 +26,7 @@ function startGame() {
 
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
-    
+
     function getRandomIntInclusive(min, max) {
         const minCeiled = Math.ceil(min);
         const maxFloored = Math.floor(max);
@@ -36,7 +37,7 @@ function startGame() {
         element.addEventListener('click', function () {
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
-                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
+                frontFace.innerHTML = `<img src=" ${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
                 restart()
@@ -48,8 +49,6 @@ function startGame() {
         });
     });
 
-    
-    
 }
 
 
@@ -63,7 +62,7 @@ function restart() {
 /* Check attempts on page load - DOMContentLoaded learned from "Love Maths" Module & 
     parseInt() learned from W3 schools https://www.w3schools.com/jsref/jsref_parseint.asp
 */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Retrieve the attempts count from localStorage, or default to 0 if not set
     attempts = parseInt(localStorage.getItem('attempts')) || 0;
     document.getElementById('attempts').textContent = attempts;
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Query Selector learned from W3 schools - https://www.w3schools.com/jsref/met_document_queryselector.asp
 function matchCounter() {
-    let matchCount = 0;
+    matchCount = 0;
     for (let i = 0; i < selectedCards.length - 1; i++) {
         for (let j = i + 1; j < selectedCards.length; j++) {
             if (selectedCards[i].querySelector('.front.face img').src === selectedCards[j].querySelector('.front.face img').src) {
@@ -86,12 +85,32 @@ function matchCounter() {
         }
     }
     if (matchCount === 3) {
-        winGame();
+        winGame(matchCount);
     } else {
         loseGame();
     }
 }
 
+// Game winner 
+function winGame(matchCount) {
+        // Retrieve the attempts count from localStorage, or default to 0 if not set
+        if (matchCount >= 3) {
+            document.getElementById('start-game-button').disabled = true;
+            document.getElementById('restart-game-button').disabled = true;
+            winnerModal();
+        }
+}
+
+
+    let winner = document.getElementById('game-winner');
+
+    function winnerModal() {
+    winner.classList.add('winner-active');
+    }
+
+    function closeWinnerModal() {
+    winner.classList.remove('winner-active');
+    }
 
 
 // function to start game - Complete
