@@ -18,7 +18,10 @@ let attempts = 0;
 
 function startGame() {
 
-    alert('Good Luck!');
+    if (attempts == 0) {
+        alert('Good Luck!');
+    }
+
 
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
@@ -49,33 +52,30 @@ function startGame() {
     
 }
 
+
+// setting and getting local storage was learned on W3 Schools - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 function restart() {
-    // Increment attempts count
     attempts++;
-    // Store the updated attempts count in localStorage
     localStorage.setItem('attempts', attempts);
-    // Reload the page to restart the game
     location.reload();
 }
 
-// Check attempts on page load
+/* Check attempts on page load - DOMContentLoaded learned from "Love Maths" Module & 
+    parseInt() learned from W3 schools https://www.w3schools.com/jsref/jsref_parseint.asp
+*/
 document.addEventListener('DOMContentLoaded', function() {
     // Retrieve the attempts count from localStorage, or default to 0 if not set
     attempts = parseInt(localStorage.getItem('attempts')) || 0;
-    // Update the display
     document.getElementById('attempts').textContent = attempts;
-    // If attempts are 5 or more, show game over and disable the game
     if (attempts >= 5) {
-        // Show game over message
         alert('Game Over: You have reached the maximum number of attempts.');
-        // Disable the game
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('restart-game-button').disabled = true;
     }
 });
 
 
-
+// Query Selector learned from W3 schools - https://www.w3schools.com/jsref/met_document_queryselector.asp
 function matchCounter() {
     let matchCount = 0;
     for (let i = 0; i < selectedCards.length - 1; i++) {
