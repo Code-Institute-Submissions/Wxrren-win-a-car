@@ -161,6 +161,48 @@
   text-align: center;
 }
 
+
+/*---------------------------------------------Sign up Modal */
+.sign-up-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 10;
+  background: var(--modal-color);
+  color: var(--text-color);
+  width: 600px;
+  max-width: 90%;
+}
+
+.sign-up-active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.sign-up-header {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.sign-up-header .sign-up-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sign-up-body {
+  padding: 10px 15px;
+}
+
+.sign-up-body .close-sign-up {
+  padding: 10px 15px 15px 10px;
+  text-align: center;
+}
+
+
 /*---------------------------------------------Submit Modal */
 .submit-modal-container {
   position: fixed;
@@ -222,17 +264,6 @@
 
 .winner-active {
   transform: translate(-50%, -50%) scale(1);
-}
-
-.winner-header {
-  padding: 10px 15px;
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-
-.winner-header .winner-title {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .winner-body {
