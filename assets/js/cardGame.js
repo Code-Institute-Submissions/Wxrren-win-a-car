@@ -15,6 +15,7 @@ let images = [
 let selectedCards = [];
 let attempts = 0;
 let matchCount = 0;
+let contactFormData = null;
 
 
 function startGame() {
@@ -37,7 +38,7 @@ function startGame() {
         element.addEventListener('click', function () {
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
-                frontFace.innerHTML = `<img src="assets/images/blueberry.webp" alt="Random Image" style="width: 100%", height="100%">`;
+                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
                 if (selectedCards.length === 3) {
@@ -93,10 +94,55 @@ function matchCounter() {
 // Game winner 
 function winGame(matchCount) {
     if (matchCount >= 3) {
+        alert(`You won! You'll receive an email in the mail`);
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('restart-game-button').disabled = true;
-        sendMail();
+        sendMail(contactFormData);
     }
+}
+
+function sendSignUpEmail(contactForm) {
+
+    contactFormData = {
+        name: contactForm.name.value,
+        emailaddress: contactForm.emailaddress.value
+    };
+
+    emailjs.send("service_8398az5", "template_h2fjv69", {
+        from_name: "Warren @ Win a Car",
+        to_name: contactForm.name.value,
+        from_email: contactForm.emailaddress.value,
+        message: "Thanks for Signing up! Good luck with your game, remember - You only get 5 attempts!",
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;  // To block from loading a new page
+}
+
+
+function sendMail(contactForm) {
+
+    emailjs.send("service_8398az5", "template_tyxq0kh", {
+        from_name: "Warren @ Win a car!",
+        to_name: contactForm.name,
+        from_email: contactForm.emailaddress,
+        message: "Congratulations! You have won a 2023 BMW M5 Competition in shiny red paint. To claim this prize, give our team a call on: 01446 734010",
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;  // To block from loading a new page
 }
 
 
