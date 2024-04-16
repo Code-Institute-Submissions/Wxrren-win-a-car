@@ -37,10 +37,9 @@ function startGame() {
         element.addEventListener('click', function () {
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
-                frontFace.innerHTML = `<img src=" ${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
+                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
-                restart()
                 if (selectedCards.length === 3) {
                     checkMatch();
                 }
@@ -93,24 +92,29 @@ function matchCounter() {
 
 // Game winner 
 function winGame(matchCount) {
-        // Retrieve the attempts count from localStorage, or default to 0 if not set
-        if (matchCount >= 3) {
-            document.getElementById('start-game-button').disabled = true;
-            document.getElementById('restart-game-button').disabled = true;
-            winnerModal();
-        }
+    if (matchCount >= 3) {
+        document.getElementById('start-game-button').disabled = true;
+        document.getElementById('restart-game-button').disabled = true;
+        sendMail();
+    }
 }
 
-
-    let winner = document.getElementById('game-winner');
-
-    function winnerModal() {
-    winner.classList.add('winner-active');
-    }
-
-    function closeWinnerModal() {
-    winner.classList.remove('winner-active');
-    }
+function sendMail() {
+    emailjs.send("service_8398az5", "template_tyxq0kh", {
+        from_name: "Warren",
+        to_name: "The lucky winner!",
+        message: "Congratulations! You have won a 2023 BMW M5 Competition in shiny red paint. To claim this prize, give our team a call on: 01446 734010",
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;  // To block from loading a new page
+}
 
 
 // function to start game - Complete
