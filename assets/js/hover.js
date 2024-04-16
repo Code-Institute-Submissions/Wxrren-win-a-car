@@ -57,6 +57,19 @@ function restartGameNormal() {
     document.getElementById("restart-game-button").style.fontSize = ""
     document.getElementById("restart-game-button").style.backgroundColor = "";
 }
+
+function signUpHover() {
+    document.getElementById("sign-up-button").style.fontSize = "150%"
+    document.getElementById("sign-up-button").style.backgroundColor = "red";
+}
+
+function signUpNormal() {
+    document.getElementById("sign-up-button").style.fontSize = ""
+    document.getElementById("sign-up-button").style.backgroundColor = "";
+}
+
+
+
 // cards hover function
 function card1Hover() {
     document.getElementById("card-1").style.backgroundColor = "var(--card-js-hover)";
