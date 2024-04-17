@@ -1,14 +1,14 @@
-let container1 = document.getElementById('card-1');
-let container2 = document.getElementById('card-2');
-let container3 = document.getElementById('card-3');
-let container4 = document.getElementById('card-4');
-let container5 = document.getElementById('card-5');
-let container6 = document.getElementById('card-6');
-let container7 = document.getElementById('card-7');
-let container8 = document.getElementById('card-8');
-let container9 = document.getElementById('card-9');
+let topLeft = document.getElementById('card-1');
+let topMiddle = document.getElementById('card-2');
+let topRight = document.getElementById('card-3');
+let middleLeft = document.getElementById('card-4');
+let middle = document.getElementById('card-5');
+let middleRight = document.getElementById('card-6');
+let bottomLeft = document.getElementById('card-7');
+let bottomMiddle = document.getElementById('card-8');
+let bottomRight = document.getElementById('card-9');
 
-let containerArray = [container1, container2, container3, container4, container5, container6, container7, container8, container9];
+let cardArray = [topLeft, topMiddle, topRight, middleLeft, middle, middleRight, bottomLeft, bottomMiddle, bottomRight];
 let images = [
     "assets/images/apple.webp", "assets/images/blueberry.webp", "assets/images/car-winner.webp", "assets/images/chilli.webp", "assets/images/corn.webp", "assets/images/grape.webp", "assets/images/orange.webp", "assets/images/stawberry.webp", "assets/images/watermelon.webp"
 ];
@@ -33,7 +33,7 @@ function startGame() {
         return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
     } // The maximum is inclusive and the minimum is inclusive
 
-    containerArray.forEach((element) => {
+    cardArray.forEach((element) => {
         element.addEventListener('click', function () {
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
