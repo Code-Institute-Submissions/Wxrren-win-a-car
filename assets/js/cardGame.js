@@ -17,12 +17,12 @@ let attempts = 0;
 let matchCount = 0;
 let contactFormData = null;
 
-
 function startGame() {
 
     if (attempts == 0) {
         alert('Good Luck!');
     }
+
 
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
@@ -40,11 +40,7 @@ function startGame() {
                 frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
-                if (selectedCards.length === 3) {
-                    checkMatch();
-                }
             }
-
         });
     });
 
