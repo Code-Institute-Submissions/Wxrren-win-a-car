@@ -303,7 +303,7 @@
   grid-gap: 30px;
   grid-template-columns: repeat(3, auto);
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -314,7 +314,7 @@
   align-items: center;
   margin-left: 38vw;
   margin-right: 38vw;
-  margin-top: 32vh;
+  margin-top: 21vh;
 }
 
 .card {
