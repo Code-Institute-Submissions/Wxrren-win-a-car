@@ -69,7 +69,7 @@
                     If you lose press restart to try again
                 </li>
                 <li class="list-group-item">
-                    Just remember you only get 5 attempts!
+                    Just remember you only get 5 attempts per sign up!<br><br>After 5 attempts, you must hit restart and sign up again.
                 </li>
                 <li class="list-group-item">Good Luck!</li>
             </ul>
@@ -123,66 +123,82 @@
           Card game Modals
         -->
     <div id="winner" class="win-modal-container">
-        <div class="modal-content">
-            <h2>You've won!</h2>
+        <div class="winner-header">
+            <div class="winner-title">You've won!</div>
+        </div>
+        <div class="winner-body">
             <p>
                 Congratulations! You've matched all the cards.<br />You'll receive an
                 email to confirm shortly!
             </p>
-            <button class="modal-button-style btn btn-info">Close</button>
+            <div class="winner-header"></div>
+            <div class="close-winner">
+                <button type="button" id="close-winner" class="btn btn-info modal-button-style">
+                    Close
+                </button>
+            </div>
         </div>
     </div>
 
     <div class="card-game-container">
-        <div class="card" id="card-1" onclick="flipCard('card-1')" onmouseover="card1Hover()" onmouseout="card1Normal()">
+        <div class="card" id="card-1" onclick="flipCard('card-1')" onmouseover="card1Hover()"
+            onmouseout="card1Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-2" onclick="flipCard('card-2')" onmouseover="card2Hover()" onmouseout="card2Normal()">
+        <div class="card" id="card-2" onclick="flipCard('card-2')" onmouseover="card2Hover()"
+            onmouseout="card2Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-3" onclick="flipCard('card-3')" onmouseover="card3Hover()" onmouseout="card3Normal()">
+        <div class="card" id="card-3" onclick="flipCard('card-3')" onmouseover="card3Hover()"
+            onmouseout="card3Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-4" onclick="flipCard('card-4')" onmouseover="card4Hover()" onmouseout="card4Normal()">
+        <div class="card" id="card-4" onclick="flipCard('card-4')" onmouseover="card4Hover()"
+            onmouseout="card4Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-5" onclick="flipCard('card-5')" onmouseover="card5Hover()" onmouseout="card5Normal()">
+        <div class="card" id="card-5" onclick="flipCard('card-5')" onmouseover="card5Hover()"
+            onmouseout="card5Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-6" onclick="flipCard('card-6')" onmouseover="card6Hover()" onmouseout="card6Normal()">
+        <div class="card" id="card-6" onclick="flipCard('card-6')" onmouseover="card6Hover()"
+            onmouseout="card6Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-7" onclick="flipCard('card-7')" onmouseover="card7Hover()" onmouseout="card7Normal()">
+        <div class="card" id="card-7" onclick="flipCard('card-7')" onmouseover="card7Hover()"
+            onmouseout="card7Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-8" onclick="flipCard('card-8')" onmouseover="card8Hover()" onmouseout="card8Normal()">
+        <div class="card" id="card-8" onclick="flipCard('card-8')" onmouseover="card8Hover()"
+            onmouseout="card8Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
             <div class="front face"></div>
         </div>
-        <div class="card" id="card-9" onclick="flipCard('card-9')" onmouseover="card9Hover()" onmouseout="card9Normal()">
+        <div class="card" id="card-9" onclick="flipCard('card-9')" onmouseover="card9Hover()"
+            onmouseout="card9Normal()">
             <div class="back face">
                 <h2 class="back-card-logo">?</h2>
             </div>
@@ -195,6 +211,12 @@
             <button id="start-game-button" class="btn btn-info button-style" onmouseover="startGameHover()"
                 onmouseout="startGameNormal()" onclick="startGame()">
                 Start
+            </button>
+        </div>
+        <div class="actions">
+            <button id="try-again-game-button" class="btn btn-info button-style" onmouseover="tryAgainHover()"
+                onmouseout="tryAgainNormal()" onclick="tryAgain()">
+                Try Again!
             </button>
         </div>
         <div class="actions">

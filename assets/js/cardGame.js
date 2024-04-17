@@ -16,6 +16,8 @@ let selectedCards = [];
 let attempts = 0;
 let matchCount = 0;
 let contactFormData = null;
+let winnerModal = document.getElementById('winner')
+let closeWinnerModal = document.getElementById('close-winner');
 
 function startGame() {
 
@@ -48,12 +50,19 @@ function startGame() {
 
 
 // setting and getting local storage was learned on W3 Schools - https://www.w3schools.com/jsref/prop_win_localstorage.asp
-function restart() {
+function tryAgain() {
     if (attempts == 0) {
-        alert('Hit start each time after pressing restart to try again!')
+        alert('Hit start each time after pressing try again!')
     }
     attempts++;
     localStorage.setItem('attempts', attempts);
+    location.reload();
+}
+
+function restart() {
+    attempts = 0;
+    document.getElementById('attempts').textContent = attempts;
+    localStorage.removeItem('attempts');
     location.reload();
 }
 
@@ -67,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (attempts >= 5) {
         alert('Game Over: You have reached the maximum number of attempts.');
         document.getElementById('start-game-button').disabled = true;
-        document.getElementById('restart-game-button').disabled = true;
+        document.getElementById('try-again-game-button').disabled = true;
     }
 });
 
@@ -84,18 +93,26 @@ function matchCounter() {
     }
     if (matchCount === 3) {
         winGame(matchCount);
-    } 
+    }
 }
 
 // Game winner 
 function winGame(matchCount) {
     if (matchCount >= 3) {
-        alert(`You won! You'll receive an email to confirm!`);
+        winnerModal.classList.add('winner-active');
+
+        document.querySelector('.winner-active').addEventListener('click', function () {
+            winnerModal.classList.remove('winner-active')
+        });
+
         document.getElementById('start-game-button').disabled = true;
+        document.getElementById('try-again-game-button').disabled = true;
         document.getElementById('restart-game-button').disabled = true;
         sendMail(contactFormData);
     }
 }
+
+
 
 function sendSignUpEmail(contactForm) {
 
@@ -140,7 +157,6 @@ function sendMail(contactForm) {
         );
     return false;  // To block from loading a new page
 }
-
 
 // Flip card function
 function flipCard(buttonPosition) {
