@@ -48,6 +48,17 @@ function startGameNormal() {
     document.getElementById("start-game-button").style.backgroundColor = "";
 }
 
+function tryAgainHover() {
+    document.getElementById("try-again-game-button").style.fontSize = "150%"
+    document.getElementById("try-again-game-button").style.backgroundColor = "red";
+}
+
+function tryAgainNormal() {
+    document.getElementById("try-again-game-button").style.fontSize = ""
+    document.getElementById("try-again-game-button").style.backgroundColor = "";
+}
+
+
 function restartGameHover() {
     document.getElementById("restart-game-button").style.fontSize = "150%"
     document.getElementById("restart-game-button").style.backgroundColor = "red";
