@@ -40,10 +40,6 @@
             onmouseout="rulesNormal()" class="btn btn-info button-style">
             Rules
         </button>
-        <button type="button" id="contact-button" onclick="contactModal()" onmouseover="contactHover()"
-            onmouseout="contactNormal()" class="btn btn-info button-style">
-            Contact us
-        </button>
         <button type="button" id="sign-up-button" onclick="signUpModal()" onmouseover="signUpHover()"
             onmouseout="signUpNormal()" class="btn btn-info button-style">
             Sign up!
@@ -75,38 +71,6 @@
                     onmouseover="closeRulesHover()" onmouseout="closeRulesNormal()"
                     class="btn btn-info modal-button-style">
                     Let's get started
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!--
-          Contact modal - form created on bootstrap
-        -->
-
-    <div class="contact-modal-container" id="contact-modal">
-        <div class="contact-header">
-            <div class="contact-title">Get In Touch!</div>
-        </div>
-        <div class="contact-body">
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
-                </div>
-                <div class="mb-3">
-                    <label for="query" class="form-label">What is your query?</label>
-                    <textarea class="form-control" id="query" rows="3"></textarea>
-                </div>
-                <button type="submit" id="submit" onclick="submitModal()" class="btn btn-primary">
-                    Submit
-                </button>
-            </form>
-            <div class="close-contact">
-                <button type="button" id="close-contact-button" onclick="closeContactModal()"
-                    onmouseover="closeContactHover()" onmouseout="closeContactNormal()"
-                    class="btn btn-info modal-button-style">
-                    Close
                 </button>
             </div>
         </div>
@@ -149,26 +113,6 @@
     </div>
 
     <!--
-          Form submission model - currently incomplete
-        -->
-
-    <div class="submit-modal-container" id="submit-modal">
-        <div class="submit-header">
-            <div class="submit-title">Thanks for getting in touch!</div>
-        </div>
-        <div class="submit-body">
-            Your query has been submitted!<br />You should receive an automated
-            response to confirm this via email
-            <div class="close-submit">
-                <button type="button" id="close-submit-button" onclick="closeSubmitModal()" onmouseover="submitHover()"
-                    onmouseout="submitNormal()" class="btn btn-info modal-button-style">
-                    Great!
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!--
           Card game
         -->
 
@@ -184,7 +128,7 @@
         <div class="modal-content">
             <h2>You've won!</h2>
             <p>
-                Congratulations! You've matched all the cards.<br />You'll receive an
+                Congratulations! You've matched all the cards.<br/>You'll receive an
                 email to confirm shortly!
             </p>
             <button class="modal-button-style btn btn-info">Close</button>
@@ -266,9 +210,7 @@
     <script type="text/javascript" src="assets/js/hover.js"></script>
     <script type="text/javascript" src="assets/js/darkMode.js"></script>
     <script type="text/javascript" src="assets/js/rulesModal.js"></script>
-    <script type="text/javascript" src="assets/js/contactModal.js"></script>
     <script type="text/javascript" src="assets/js/signUpModal.js"></script>
-   
     <script type="text/javascript" src="assets/js/cardGame.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
