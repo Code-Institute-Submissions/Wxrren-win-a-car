@@ -28,6 +28,13 @@
   }
 
   /*--------------------------------------------Fonts */
+  * {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+  }
+  
   
   #brand-header {
     text-transform: uppercase;
@@ -42,6 +49,13 @@
   .back-card-logo {
     font-size: 90px;
   }
+
+  #toggle-aware {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: "Bebas Neue", sans-serif;
+    font-size:larger;
+  }
 /*---------------------------------------------Header */
 
 .brand-nav {
@@ -49,12 +63,12 @@
   justify-content:space-between;
   align-items: center;
   margin-left: 45vw;
+  
 }
 
 #moon-toggle {
     width: 50px;
     cursor: pointer;
-    
 }
 
 /*---------------------------------------------Button */
