@@ -24,7 +24,6 @@ function startGame() {
         alert('Good Luck!');
     }
 
-
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
 
@@ -54,6 +53,9 @@ function startGame() {
 
 // setting and getting local storage was learned on W3 Schools - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 function restart() {
+    if (attempts == 0) {
+        alert('Hit start each time after pressing restart to try again!')
+    }
     attempts++;
     localStorage.setItem('attempts', attempts);
     location.reload();
@@ -86,15 +88,13 @@ function matchCounter() {
     }
     if (matchCount === 3) {
         winGame(matchCount);
-    } else {
-        loseGame();
-    }
+    } 
 }
 
 // Game winner 
 function winGame(matchCount) {
     if (matchCount >= 3) {
-        alert(`You won! You'll receive an email in the mail`);
+        alert(`You won! You'll receive an email to confirm!`);
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('restart-game-button').disabled = true;
         sendMail(contactFormData);
@@ -144,8 +144,6 @@ function sendMail(contactForm) {
         );
     return false;  // To block from loading a new page
 }
-
-
 
 // function to start game - Complete
 // array of strings with filed image paths - complete
