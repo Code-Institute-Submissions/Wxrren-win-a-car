@@ -141,39 +141,9 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
 }
 
-// function to start game - Complete
-// array of strings with filed image paths - complete
-// function that will generate a random number - complete
-// function that click binds to card to flip the card - complete
-// function that tracks if the cards display match. Turn/attempt ends when 3 cards are selected. - complete
-// function that pops up saying winner if  matches are made - generates an email confirmation with an emial API
-// function that tracks how many attempts are made. Game over when you reach 5. 
 
-// Flip card functions
-function flipCard1() {
-    container1.classList.add('flip-card');
+// Flip card function
+function flipCard(buttonPosition) {
+    document.getElementById(buttonPosition).classList.add('flip-card')
 }
-function flipCard2() {
-    container2.classList.add('flip-card');
-}
-function flipCard3() {
-    container3.classList.add('flip-card');
-}
-function flipCard4() {
-    container4.classList.add('flip-card');
-}
-function flipCard5() {
-    container5.classList.add('flip-card');
-}
-function flipCard6() {
-    container6.classList.add('flip-card');
-}
-function flipCard7() {
-    container7.classList.add('flip-card');
-}
-function flipCard8() {
-    container8.classList.add('flip-card');
-}
-function flipCard9() {
-    container9.classList.add('flip-card');
-}
+
