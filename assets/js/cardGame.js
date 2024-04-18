@@ -17,13 +17,20 @@ let attempts = 0;
 let matchCount = 0;
 let contactFormData = null;
 let winnerModal = document.getElementById('winner')
+let goodLuck = document.getElementById('game-start-modal');
 
 function startGame() {
 
     if (attempts == 0) {
-        alert('Good Luck!');
-    }
+        goodLuck.classList.add('game-start-active');
 
+        if (goodLuck.classList.contains('game-start-active')) {
+            document.querySelector('#close-game-start-button').addEventListener('click', function () {
+                goodLuck.classList.remove('game-start-active')
+            });
+    
+        }
+    }
 
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
