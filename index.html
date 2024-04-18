@@ -46,7 +46,10 @@
             onmouseout="rulesNormal()" class="btn btn-info button-style">
             Rules
         </button>
-
+        <button type="button" id="contact-button" onclick="contactModal()" onmouseover="contactHover()"
+            onmouseout="contactNormal()" class="btn btn-info button-style">
+            Contact us
+        </button>
     </div>
 
     <!--
@@ -75,6 +78,38 @@
             </div>
         </div>
     </div>
+
+
+    <!--
+          Contact modal - form created on bootstrap
+        -->
+        <div class="contact-modal-container" id="contact-modal">
+            <div class="contact-header">
+                <div class="contact-title">Get In Touch!</div>
+            </div>
+            <div class="contact-body">
+                <form method="post" onsubmit="return sendQueryEmail(this)">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" name="queryemailaddress" class="form-control" id="contact-email" placeholder="name@example.com" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="query" class="form-label">What is your query?</label>
+                        <textarea class="form-control" id="query" rows="3"></textarea>
+                    </div>
+                    <button type="submit" onclick="closeContactModal()" id="contact-submit"  class="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+                <div class="close-contact">
+                    <button type="button" id="close-contact-button" 
+                        onmouseover="closeContactHover()" onmouseout="closeContactNormal()"
+                        class="btn btn-info modal-button-style">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
 
     <!--
           Card game
@@ -228,6 +263,7 @@
     <script type="text/javascript" src="assets/js/hover.js"></script>
     <script type="text/javascript" src="assets/js/darkMode.js"></script>
     <script type="text/javascript" src="assets/js/rulesModal.js"></script>
+    <script type="text/javascript" src="assets/js/contactModal.js"></script>
     <script type="text/javascript" src="assets/js/signUpModal.js"></script>
     <script type="text/javascript" src="assets/js/cardGame.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

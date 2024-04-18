@@ -259,6 +259,50 @@
 }
 
 
+/*---------------------------------------------Game start modal */
+
+.game-start-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 20px;
+  z-index: 10;
+  background: var(--modal-color);
+  color: var(--text-color);
+  width: 220px;
+  max-width: 90%;
+}
+
+
+.game-start-active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.game-start-header {
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+
+.game-start-header .game-start-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.game-start-body {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.game-start-body .close-game-start {
+  padding: 10px 15px 15px 10px;
+}
+
+
 
 
 /*---------------------------------------------Game */

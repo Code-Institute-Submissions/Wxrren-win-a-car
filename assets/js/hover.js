@@ -1,3 +1,4 @@
+// Dark mode button hover
 function logoHover() {
     document.getElementById("moon-toggle").style.height ="70px"
     document.getElementById("moon-toggle").style.width ="70px"
@@ -8,6 +9,7 @@ function logoNormal() {
     document.getElementById("moon-toggle").style.width =""
 }
 
+//Rules button hover
 function rulesHover() {
     document.getElementById("rules-button").style.fontSize = "150%"
     document.getElementById("rules-button").style.backgroundColor = "red";
@@ -28,6 +30,7 @@ function closeRulesNormal() {
     document.getElementById("close-rules-button").style.backgroundColor = "";
 }
 
+// Contact hover button
 function contactHover() {
     document.getElementById("contact-button").style.fontSize = "150%"
     document.getElementById("contact-button").style.backgroundColor = "red";
@@ -38,6 +41,7 @@ function contactNormal() {
     document.getElementById("contact-button").style.backgroundColor = "";
 }  
 
+//Start game hover
 function startGameHover() {
     document.getElementById("start-game-button").style.fontSize = "150%"
     document.getElementById("start-game-button").style.backgroundColor = "red";
@@ -48,6 +52,7 @@ function startGameNormal() {
     document.getElementById("start-game-button").style.backgroundColor = "";
 }
 
+//Try again hover
 function tryAgainHover() {
     document.getElementById("try-again-game-button").style.fontSize = "150%"
     document.getElementById("try-again-game-button").style.backgroundColor = "red";
@@ -58,7 +63,7 @@ function tryAgainNormal() {
     document.getElementById("try-again-game-button").style.backgroundColor = "";
 }
 
-
+//Restart hover
 function restartGameHover() {
     document.getElementById("restart-game-button").style.fontSize = "150%"
     document.getElementById("restart-game-button").style.backgroundColor = "red";
@@ -69,14 +74,15 @@ function restartGameNormal() {
     document.getElementById("restart-game-button").style.backgroundColor = "";
 }
 
-function signUpHover() {
-    document.getElementById("sign-up-button").style.fontSize = "150%"
-    document.getElementById("sign-up-button").style.backgroundColor = "red";
+//good luck hover
+function goodLuckHover() {
+    document.getElementById("close-game-start-button").style.fontSize = "150%"
+    document.getElementById("close-game-start-button").style.backgroundColor = "red";
 }
 
-function signUpNormal() {
-    document.getElementById("sign-up-button").style.fontSize = ""
-    document.getElementById("sign-up-button").style.backgroundColor = "";
+function goodLuckNormal() {
+    document.getElementById("close-game-start-button").style.fontSize = ""
+    document.getElementById("close-game-start-button").style.backgroundColor = "";
 }
 
 

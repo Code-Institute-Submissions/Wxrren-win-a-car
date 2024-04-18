@@ -26,12 +26,11 @@ function startGame() {
 
         if (goodLuck.classList.contains('game-start-active')) {
             document.querySelector('#close-game-start-button').addEventListener('click', function () {
-                goodLuck.classList.remove('game-start-active')
-            });
-    
+            goodLuck.classList.remove('game-start-active')
+        });
+
         }
     }
-
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
 
@@ -132,6 +131,23 @@ function sendSignUpEmail(contactForm) {
         to_name: contactForm.name.value,
         from_email: contactForm.emailaddress.value,
         message: "Congratulations! You have won a 2023 BMW M5 Competition in shiny red paint. To claim this prize, give our team a call on: 01446 734010",
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;  // To block from loading a new page
+}
+
+function sendQueryEmail(contactForm) {
+    emailjs.send("service_8398az5", "template_h2fjv69", {
+        from_name: "Warren @ Win a Car",
+        from_email: contactForm.queryemailaddress.value,
+        message: "Thank you for reaching out! A member of our team will be in touch about your query in 3-5 business days. For urgent requests, give us a call on 01446 73401",
     })
         .then(
             function (response) {
