@@ -18,6 +18,7 @@ let matchCount = 0;
 let contactFormData = null;
 let winnerModal = document.getElementById('winner')
 let goodLuck = document.getElementById('game-start-modal');
+let gameOverModal = document.getElementById('game-over-modal');
 
 function startGame() {
 
@@ -31,6 +32,7 @@ function startGame() {
 
         }
     }
+
     selectedCards = [];
     document.getElementById('matches').innerHTML = 0;
 
@@ -56,9 +58,6 @@ function startGame() {
 
 // setting and getting local storage was learned on W3 Schools - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 function tryAgain() {
-    if (attempts == 0) {
-        alert('Hit start each time after pressing try again!')
-    }
     attempts++;
     localStorage.setItem('attempts', attempts);
     location.reload();

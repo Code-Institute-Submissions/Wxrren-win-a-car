@@ -148,10 +148,10 @@
         -->
     <div class="game-start-modal-container" id="game-start-modal">
         <div class="game-start-header">
-            <div class="game-start-title">Good Luck</div>
+            <div class="game-start-title">Good Luck!</div>
         </div>
         <div class="game-start-body">
-            You can do this!
+            You can do this!<br><br>Hit start each time after pressing try again!
             <div class="close-game-start">
                 <button type="button" id="close-game-start-button"
                     onmouseover="goodLuckHover()" onmouseout="goodLuckNormal()"
@@ -162,7 +162,26 @@
         </div>
     </div>
 
-
+     <!--
+          Game Start
+        -->
+        <div class="game-over-modal-container" id="game-over-modal">
+            <div class="game-over-header">
+                <div class="game-over-title">Game Over!</div>
+            </div>
+            <div class="game-over-body">
+                You have reached the maximum number of attempts. Hit restart to try again
+                <div class="close-game-over">
+                    <div class="actions">
+                        <button id="restart-game-button" class="btn btn-info modal-button-style" onmouseover="restartGameHover()"
+                            onmouseout="restartGameNormal()" onclick="restart()">
+                            Restart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     <!--
          Cards
         -->
@@ -243,12 +262,6 @@
             <button id="try-again-game-button" class="btn btn-info button-style" onmouseover="tryAgainHover()"
                 onmouseout="tryAgainNormal()" onclick="tryAgain()">
                 Try Again!
-            </button>
-        </div>
-        <div class="actions">
-            <button id="restart-game-button" class="btn btn-info button-style" onmouseover="restartGameHover()"
-                onmouseout="restartGameNormal()" onclick="restart()">
-                Restart
             </button>
         </div>
     </div>
