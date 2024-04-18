@@ -55,8 +55,6 @@ function startGame() {
 
 }
 
-
-// setting and getting local storage was learned on W3 Schools - https://www.w3schools.com/jsref/prop_win_localstorage.asp
 function tryAgain() {
     attempts++;
     localStorage.setItem('attempts', attempts);
@@ -70,22 +68,17 @@ function restart() {
     location.reload();
 }
 
-/* Check attempts on page load - DOMContentLoaded learned from "Love Maths" Module & 
-    parseInt() learned from W3 schools https://www.w3schools.com/jsref/jsref_parseint.asp
-*/
 document.addEventListener('DOMContentLoaded', function () {
     // Retrieve the attempts count from localStorage, or default to 0 if not set
     attempts = parseInt(localStorage.getItem('attempts')) || 0;
     document.getElementById('attempts').textContent = attempts;
     if (attempts >= 5) {
-        alert('Game Over: You have reached the maximum number of attempts.');
+        gameOverModal.classList.add('game-over-active');
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('try-again-game-button').disabled = true;
     }
 });
 
-
-// Query Selector learned from W3 schools - https://www.w3schools.com/jsref/met_document_queryselector.asp
 function matchCounter() {
     matchCount = 0;
     for (let i = 0; i < selectedCards.length - 1; i++) {
