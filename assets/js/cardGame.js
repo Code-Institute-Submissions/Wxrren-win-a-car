@@ -17,7 +17,6 @@ let attempts = 0;
 let matchCount = 0;
 let contactFormData = null;
 let winnerModal = document.getElementById('winner')
-let closeWinnerModal = document.getElementById('close-winner');
 
 function startGame() {
 
@@ -100,20 +99,20 @@ function matchCounter() {
 function winGame(matchCount) {
     if (matchCount >= 3) {
         winnerModal.classList.add('winner-active');
-
-        document.querySelector('.winner-active').addEventListener('click', function () {
+        
+        if (winnerModal.classList.contains('winner-active')) {
+           document.querySelector('#submit').addEventListener('click', function () {
             winnerModal.classList.remove('winner-active')
         });
+        }
+       
 
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('try-again-game-button').disabled = true;
         document.getElementById('restart-game-button').disabled = true;
-        sendMail(contactFormData);
     }
 }
-
-
-
+// Email sent when win condition is met - 
 function sendSignUpEmail(contactForm) {
 
     contactFormData = {
@@ -121,30 +120,10 @@ function sendSignUpEmail(contactForm) {
         emailaddress: contactForm.emailaddress.value
     };
 
-    emailjs.send("service_8398az5", "template_h2fjv69", {
+    emailjs.send("service_8398az5", "template_tyxq0kh", {
         from_name: "Warren @ Win a Car",
         to_name: contactForm.name.value,
         from_email: contactForm.emailaddress.value,
-        message: "Thanks for Signing up! Good luck with your game, remember - You only get 5 attempts!",
-    })
-        .then(
-            function (response) {
-                console.log("SUCCESS", response);
-            },
-            function (error) {
-                console.log("FAILED", error);
-            }
-        );
-    return false;  // To block from loading a new page
-}
-
-
-function sendMail(contactForm) {
-
-    emailjs.send("service_8398az5", "template_tyxq0kh", {
-        from_name: "Warren @ Win a car!",
-        to_name: contactForm.name,
-        from_email: contactForm.emailaddress,
         message: "Congratulations! You have won a 2023 BMW M5 Competition in shiny red paint. To claim this prize, give our team a call on: 01446 734010",
     })
         .then(

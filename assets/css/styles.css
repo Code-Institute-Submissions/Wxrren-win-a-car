@@ -62,7 +62,7 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-left: 45vw;
+  margin-left: 44vw;
   
 }
 
@@ -229,7 +229,7 @@
   background: linear-gradient(90deg, rgba(1, 1, 44, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 0, 1) 100%);
   color: white;
   width: 400px;
-  height: 270px;
+  height: 470px;
   max-width: 80%;
   text-align: center;
 }
@@ -297,7 +297,7 @@
   align-items: center;
   margin-left: 38vw;
   margin-right: 38vw;
-  margin-top: 27vh;
+  margin-top: 37vh;
 }
 
 .card {

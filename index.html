@@ -29,7 +29,6 @@
     <header class="brand-nav">
         <a class="navbar-brand" href="index.html" aria-label="Return to home screen">
             <h1 id="brand-header">Win a car</h1>
-            <p>Sign up to get started!</p>
         </a>
         <div>
             <span id="toggle-aware">Dark Mode</span>
@@ -39,7 +38,7 @@
     </header>
 
     <!--
-           Rules and contact buttons
+           Rules button
         -->
 
     <div class="grid-container-button">
@@ -47,10 +46,7 @@
             onmouseout="rulesNormal()" class="btn btn-info button-style">
             Rules
         </button>
-        <button type="button" id="sign-up-button" onclick="signUpModal()" onmouseover="signUpHover()"
-            onmouseout="signUpNormal()" class="btn btn-info button-style">
-            Sign up!
-        </button>
+      
     </div>
 
     <!--
@@ -68,9 +64,6 @@
                 <li class="list-group-item">
                     If you lose press restart to try again
                 </li>
-                <li class="list-group-item">
-                    Just remember you only get 5 attempts per sign up!<br><br>After 5 attempts, you must hit restart and sign up again.
-                </li>
                 <li class="list-group-item">Good Luck!</li>
             </ul>
             <div class="close-rules">
@@ -80,33 +73,6 @@
                     Let's get started
                 </button>
             </div>
-        </div>
-    </div>
-
-    <!--
-          Sign up model
-        -->
-
-    <div class="sign-up-modal-container" id="sign-up-modal">
-        <div class="sign-up-header">
-            <div class="sign-up-title">Sign up to play!</div>
-        </div>
-        <div class="sign-up-body">
-            <form onsubmit="return sendSignUpEmail(this)" method="post">
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" name="emailaddress" class="form-control" id="email"
-                        placeholder="name@example.com" required />
-                </div>
-                <div class="mb-3">
-                    <label for="full-name" class="form-label">What is your full name?</label>
-                    <input type="text" name="name" class="form-control" id="full-name" placeholder="Steve Dave"
-                        required />
-                </div>
-                <button type="submit" onclick="closeSignUpModal()" id="submit" class="btn btn-primary">
-                    Submit
-                </button>
-            </form>
         </div>
     </div>
 
@@ -128,17 +94,30 @@
         </div>
         <div class="winner-body">
             <p>
-                Congratulations! You've matched all the cards.<br />You'll receive an
+                Congratulations! You've matched all the cards.<br /> Fill out your details below<br>You'll receive an
                 email to confirm shortly!
             </p>
-            <div class="winner-header"></div>
-            <div class="close-winner">
-                <button type="button" id="close-winner" class="btn btn-info modal-button-style">
-                    Close
+            <form onsubmit="return sendSignUpEmail(this)" method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="emailaddress" class="form-control" id="email"
+                        placeholder="name@example.com" required />
+                </div>
+                <div class="mb-3">
+                    <label for="full-name" class="form-label">What is your full name?</label>
+                    <input type="text" name="name" class="form-control" id="full-name" placeholder="Steve Dave"
+                        required />
+                </div>
+                <button type="submit" onclick="closeWinnerModal()" id="submit" class="btn btn-primary close-winner">
+                    Submit
                 </button>
-            </div>
+            </form>
         </div>
     </div>
+
+     <!--
+          Card game Modals
+        -->
 
     <div class="card-game-container">
         <div class="card" id="card-1" onclick="flipCard('card-1')" onmouseover="card1Hover()"
