@@ -21,7 +21,7 @@
     --text-color: #ffffff;
     --modal-color: green;
     --rules-button-color: green;
-    --rules-modal-button-color: lightblue;
+    --rules-modal-button-color: #0d6efd;
     --card-background-color: linear-gradient(90deg, rgba(92, 255, 85, 0.8) 20%, rgba(246, 3, 221, 0.8) 100%);
     --card-js-hover: red;
     --card-js-border-hover: white;
@@ -341,7 +341,7 @@
   align-items: center;
   margin-left: 38vw;
   margin-right: 38vw;
-  margin-top: 37vh;
+  margin-top: 32vh;
 }
 
 .card {

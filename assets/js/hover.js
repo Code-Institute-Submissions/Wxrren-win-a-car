@@ -41,6 +41,19 @@ function contactNormal() {
     document.getElementById("contact-button").style.backgroundColor = "";
 }  
 
+function closeContactHover() {
+    document.getElementById("contact-submit").style.fontSize = "140%"
+    document.getElementById("contact-submit").style.backgroundColor = "red";
+}   
+
+function closeContactNormal() {
+    document.getElementById("contact-submit").style.fontSize = ""
+    document.getElementById("contact-submit").style.backgroundColor = "";
+}
+
+
+
+/*-----------------------------------------------Game Buttons --------------------------------------- */
 //Start game hover
 function startGameHover() {
     document.getElementById("start-game-button").style.fontSize = "150%"

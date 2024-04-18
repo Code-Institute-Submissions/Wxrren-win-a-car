@@ -97,17 +97,10 @@
                         <label for="query" class="form-label">What is your query?</label>
                         <textarea class="form-control" id="query" rows="3"></textarea>
                     </div>
-                    <button type="submit" onclick="closeContactModal()" id="contact-submit"  class="btn btn-primary">
+                    <button type="submit" onclick="closeContactModal()" onmouseover="closeContactHover()" onmouseout="closeContactNormal()" id="contact-submit"  class="btn btn-primary">
                         Submit
                     </button>
                 </form>
-                <div class="close-contact">
-                    <button type="button" id="close-contact-button" 
-                        onmouseover="closeContactHover()" onmouseout="closeContactNormal()"
-                        class="btn btn-info modal-button-style">
-                        Close
-                    </button>
-                </div>
             </div>
         </div>
 
