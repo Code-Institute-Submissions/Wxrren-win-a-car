@@ -32,7 +32,7 @@ function closeRulesNormal() {
 
 // Contact hover button
 function contactHover() {
-    document.getElementById("contact-button").style.fontSize = "140%"
+    document.getElementById("contact-button").style.fontSize = "120%"
     document.getElementById("contact-button").style.backgroundColor = "red";
 }   
 

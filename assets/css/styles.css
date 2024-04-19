@@ -466,8 +466,8 @@ margin-right: 3vw;
 .card-game-container {
 display: grid;
 justify-content: left;
-grid-gap: 8px;
-grid-template-columns: repeat(3, auto);
+grid-gap: 3px;
+grid-template-columns: repeat(3, 90px);
 position: absolute;
 top: 51%;
 left: 50%;
@@ -478,8 +478,8 @@ transform: translate(-50%, -50%);
 display: flex;
 justify-content:space-between;
 align-items: center;
-margin-left: 23vw;
-margin-right: 38vw;
+margin-left: 2vw;
+margin-right: 3vw;
 margin-top: 68vh;
 }
 
@@ -569,6 +569,10 @@ text-align: center;
 
 #contact-button {
 font-size: 12px;
+}
+
+#contact-button:hover {
+  font-size: 30%;
 }
 
 }
@@ -737,7 +741,7 @@ justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
 grid-template-rows: repeat(2);
-margin-right: 34vw;
+margin-right: 36vw;
 margin-top: 0vh;
 
 }
@@ -767,11 +771,11 @@ justify-content:space-between;
 align-items: center;
 margin-left: 23vw;
 margin-right: 38vw;
-margin-top: 71vh;
+margin-top: 68vh;
 }
 
 .card {
-height: calc(130px / 2 * 3);
+height: calc(90px / 2 * 3);
 width: 90px;
 border-radius: 15px;
 background: var(--card-background-color);
