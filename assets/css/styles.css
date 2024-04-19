@@ -758,7 +758,7 @@ margin-right: 3vw;
 display: grid;
 justify-content: left;
 grid-gap: 8px;
-grid-template-columns: repeat(3, auto);
+grid-template-columns: repeat(3, 90px);
 position: absolute;
 top: 51%;
 left: 50%;
@@ -866,7 +866,7 @@ font-size: 12px;
 @media only screen and (min-width: 450px) and (max-width: 480px) {
 
  /*---------------------------------------------Header*/
- .brand-nav {
+.brand-nav {
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -885,7 +885,7 @@ justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
 grid-template-rows: repeat(2);
-margin-right: 34vw;
+margin-right: 36vw;
 margin-top: 0vh;
 
 }
@@ -901,7 +901,7 @@ margin-right: 3vw;
 .card-game-container {
 display: grid;
 justify-content: left;
-grid-gap: 15px;
+grid-gap: 8px;
 grid-template-columns: repeat(3, auto);
 position: absolute;
 top: 51%;
@@ -914,13 +914,13 @@ display: flex;
 justify-content:space-between;
 align-items: center;
 margin-left: 2vw;
-margin-right: 2vw;
-margin-top: 71vh;
+margin-right: 3vw;
+margin-top: 68vh;
 }
 
 .card {
-height: calc(130px / 2 * 3);
-width: 110px;
+height: calc(90px / 2 * 3);
+width: 90px;
 border-radius: 15px;
 background: var(--card-background-color);
 cursor: pointer;
@@ -1008,6 +1008,147 @@ font-size: 12px;
 
 }
 @media only screen and (min-width: 481px) and (max-width: 528px) {
+
+  /*---------------------------------------------Header*/
+.brand-nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 3vw;
+  
+}
+
+#moon-toggle {
+    width: 50px;
+    cursor: pointer;
+}
+/*---------------------------------------------Game */
+.grid-container-button {
+display: grid;
+justify-content: right;
+grid-gap: 5px;
+grid-template-columns: repeat(1, 120px);
+grid-template-rows: repeat(2);
+margin-right: 36vw;
+margin-top: 0vh;
+
+}
+
+.game-buttons-container {
+display: flex;
+justify-content:space-between;
+align-items: center;
+margin-left: 2vw;
+margin-right: 3vw;
+}
+
+.card-game-container {
+display: grid;
+justify-content: left;
+grid-gap: 8px;
+grid-template-columns: repeat(3, auto);
+position: absolute;
+top: 51%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.score-container {
+display: flex;
+justify-content:space-between;
+align-items: center;
+margin-left: 2vw;
+margin-right: 3vw;
+margin-top: 68vh;
+}
+
+.card {
+height: calc(90px / 2 * 3);
+width: 90px;
+border-radius: 15px;
+background: var(--card-background-color);
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+
+.back {
+color: white;
+}
+
+.face {
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+backface-visibility: hidden;
+}
+
+.card.flip-card .back{
+transform: rotateY(-180deg);
+}
+
+.card.flip-card .front {
+transform: rotateY(o);
+}
+
+.cardHover {
+background-color: var(--card-js-hover);
+border: 5px solid var(--card-js-border-hover);
+}
+
+.cardNormal {
+background-color: none;
+border: none;
+}
+
+/*---------------------------------------------Winning Modal */
+.win-modal-container { 
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+transition: 200ms ease-in-out;
+border: 1px solid black;
+border-radius: 20px;
+z-index: 10;
+background: linear-gradient(90deg, rgba(1, 1, 44, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 0, 1) 100%);
+color: white;
+width: 400px;
+height: 480px;
+max-width: 80%;
+text-align: center;
+}
+
+.winner-active {
+transform: translate(-50%, -50%) scale(1);
+}
+
+.winner-header {
+padding: 10px 15px;
+text-align: center;
+border-bottom: 1px solid black;
+}
+
+.winner-header .winner-title {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.winner-body {
+padding: 10px 15px;
+}
+
+.winner-body .close-winner {
+padding: 10px 15px 15px 10px;
+text-align: center;
+}
+
+#contact-button {
+font-size: 12px;
+}
 
 }
 @media only screen and (min-width: 529px) and (max-width: 599px) {
