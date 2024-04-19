@@ -623,11 +623,11 @@ justify-content:space-between;
 align-items: center;
 margin-left: 23vw;
 margin-right: 38vw;
-margin-top: 71vh;
+margin-top: 68vh;
 }
 
 .card {
-height: calc(130px / 2 * 3);
+height: calc(90px / 2 * 3);
 width: 90px;
 border-radius: 15px;
 background: var(--card-background-color);
