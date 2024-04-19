@@ -450,7 +450,7 @@ justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
 grid-template-rows: repeat(2);
-margin-right: 30vw;
+margin-right: 34vw;
 margin-top: 0vh;
 
 }
@@ -484,7 +484,7 @@ margin-top: 68vh;
 }
 
 .card {
-height: calc(110px / 2 * 3);
+height: calc(90px / 2 * 3);
 width: 90px;
 border-radius: 15px;
 background: var(--card-background-color);
