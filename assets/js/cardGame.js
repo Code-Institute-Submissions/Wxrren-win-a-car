@@ -19,7 +19,7 @@ let contactFormData = null;
 let winnerModal = document.getElementById('winner')
 let goodLuck = document.getElementById('game-start-modal');
 let gameOverModal = document.getElementById('game-over-modal');
-let playButton = document.getElementById('start-game-button')
+let playButton = document.getElementById('start-game-button');
 
 function startGame() {
 
@@ -28,7 +28,7 @@ function startGame() {
 
         if (goodLuck.classList.contains('game-start-active')) {
             document.querySelector('#close-game-start-button').addEventListener('click', function () {
-                goodLuck.classList.remove('game-start-active')
+                goodLuck.classList.remove('game-start-active');
             });
 
         }
@@ -110,7 +110,7 @@ function winGame(matchCount) {
 
         if (winnerModal.classList.contains('winner-active')) {
             document.querySelector('#submit').addEventListener('click', function () {
-                winnerModal.classList.remove('winner-active')
+                winnerModal.classList.remove('winner-active');
             });
         }
 
@@ -141,9 +141,9 @@ function sendSignUpEmail(contactForm) {
             function (error) {
                 console.log("FAILED", error);
             }
-        );
+        )
     return false;  // To block from loading a new page
-}
+};
 
 function sendQueryEmail(contactForm) {
     emailjs.send("service_8398az5", "template_h2fjv69", {
@@ -168,7 +168,7 @@ function flipCard(buttonPosition) {
     if (selectedCards.length >= 3) {
         return;
     }
-    document.getElementById(buttonPosition).classList.add('flip-card')
+    document.getElementById(buttonPosition).classList.add('flip-card');
 
 }
 
