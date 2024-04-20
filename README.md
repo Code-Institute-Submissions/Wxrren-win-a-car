@@ -118,6 +118,7 @@ For the background of lightmode I chose a simple blue as it felt calm and inviti
     * Dark mode modal button color: #0d6efd - The above colour in darkmode was not very readable with plain white text. I wanted the text to be as regimented as possible so changed the colours.
     * Light mode card colours: rgba(85, 213, 255, 0.8) + rgba(255, 94, 6, 0.8) - These were chosen in an effort to follow the ten commandments of colour. They are across from eachother on the colour wheel and both compliment eachother making the cards look more enticing.
     * Dark mode card colours: rgba(92, 255, 85, 0.8) + rgba(246, 3, 221, 0.8). Similar to lightmode these compliment eachother on the colour wheel and are aimed to make the cards look more attractive to players.
+    * Game winning Modal: rgba(1, 1, 44, 1) + rgba(9, 9, 121, 1) + rgba(255, 0, 0, 1) - I wanted the winning modal to stand out as a celebratory message. For this modal only I chose to break the colour rule and reused the colours from my first project. This was done as a small little reference for my past work.
 
 ### Typography
 
