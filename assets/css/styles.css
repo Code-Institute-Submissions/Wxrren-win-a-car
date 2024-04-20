@@ -30,7 +30,6 @@ body {
 /*--------------------------------------------Fonts */
 * {
   font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-weight: bolder;
 }
@@ -352,7 +351,6 @@ display: grid;
 justify-content: right;
 grid-gap: 16px;
 grid-template-columns: repeat(1, 180px);
-grid-template-rows: repeat(2);
 margin-right: 2vw;
 margin-top: 40vh;
 }
@@ -362,7 +360,6 @@ display: flex;
 justify-content:space-between;
 align-items: center;
 margin-left: 38vw;
-margin-right: 38vw;
 }
 
 .card-game-container {
@@ -413,9 +410,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -423,7 +417,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -449,7 +442,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 34vw;
 margin-top: 0vh;
 
@@ -512,17 +504,12 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
-
 .cardHover {
 background-color: var(--card-js-hover);
 border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -597,7 +584,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 34vw;
 margin-top: 0vh;
 
@@ -659,9 +645,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -669,7 +652,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -741,7 +723,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -803,9 +784,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -813,7 +791,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -885,7 +862,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -947,9 +923,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -957,7 +930,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1029,7 +1001,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -1091,9 +1062,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1101,7 +1069,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1173,7 +1140,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -1235,9 +1201,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1245,7 +1208,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1316,7 +1278,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -1378,9 +1339,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1388,7 +1346,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1459,7 +1416,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 36vw;
 margin-top: 0vh;
 
@@ -1521,9 +1477,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1531,7 +1484,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1602,7 +1554,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -1664,9 +1615,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1674,7 +1622,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1745,7 +1692,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -1807,9 +1753,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1817,7 +1760,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -1887,7 +1829,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -1949,9 +1890,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -1959,7 +1897,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2030,7 +1967,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2092,9 +2028,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2102,7 +2035,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2175,7 +2107,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2237,9 +2168,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2247,7 +2175,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2318,7 +2245,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2380,9 +2306,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2390,7 +2313,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2461,7 +2383,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2523,9 +2444,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2533,7 +2451,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2605,7 +2522,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2667,9 +2583,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2677,7 +2590,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2749,7 +2661,6 @@ display: grid;
 justify-content: right;
 grid-gap: 5px;
 grid-template-columns: repeat(1, 120px);
-grid-template-rows: repeat(2);
 margin-right: 3vw;
 margin-top: 35vh;
 
@@ -2811,9 +2722,6 @@ backface-visibility: hidden;
 transform: rotateY(-180deg);
 }
 
-.card.flip-card .front {
-transform: rotateY(o);
-}
 
 .cardHover {
 background-color: var(--card-js-hover);
@@ -2821,7 +2729,6 @@ border: 5px solid var(--card-js-border-hover);
 }
 
 .cardNormal {
-background-color: none;
 border: none;
 }
 
@@ -2881,7 +2788,6 @@ font-size: 12px;
   justify-content: right;
   grid-gap: 5px;
   grid-template-columns: repeat(1, 120px);
-  grid-template-rows: repeat(2);
   margin-right: 3vw;
   margin-top: 35vh;
   
@@ -2943,9 +2849,6 @@ font-size: 12px;
   transform: rotateY(-180deg);
   }
   
-  .card.flip-card .front {
-  transform: rotateY(o);
-  }
   
   .cardHover {
   background-color: var(--card-js-hover);
@@ -2953,7 +2856,6 @@ font-size: 12px;
   }
   
   .cardNormal {
-  background-color: none;
   border: none;
   }
   
@@ -3013,7 +2915,6 @@ font-size: 12px;
   justify-content: right;
   grid-gap: 5px;
   grid-template-columns: repeat(1, 120px);
-  grid-template-rows: repeat(2);
   margin-right: 3vw;
   margin-top: 35vh;
   
@@ -3075,9 +2976,6 @@ font-size: 12px;
   transform: rotateY(-180deg);
   }
   
-  .card.flip-card .front {
-  transform: rotateY(o);
-  }
   
   .cardHover {
   background-color: var(--card-js-hover);
@@ -3085,7 +2983,6 @@ font-size: 12px;
   }
   
   .cardNormal {
-  background-color: none;
   border: none;
   }
   
@@ -3135,16 +3032,4 @@ font-size: 12px;
   font-size: 12px;
   }
   
-}
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
-
-}
-@media only screen and (min-width: 1400px) and (max-width: 1499px) {
-
-}
-@media only screen and (min-width: 1500px) and (max-width: 1699px) {
-
-}
-@media (min-width: 2560px) and (max-width: 3840px) {
-
 }
