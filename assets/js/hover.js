@@ -11,12 +11,10 @@ function logoNormal() {
 
 //Rules button hover
 function rulesHover() {
-    document.getElementById("rules-button").style.fontSize = "150%"
     document.getElementById("rules-button").style.backgroundColor = "red";
 }  
 
 function rulesNormal() {
-    document.getElementById("rules-button").style.fontSize = ""
     document.getElementById("rules-button").style.backgroundColor = "";
 }  
 
@@ -32,12 +30,10 @@ function closeRulesNormal() {
 
 // Contact hover button
 function contactHover() {
-    document.getElementById("contact-button").style.fontSize = "120%"
     document.getElementById("contact-button").style.backgroundColor = "red";
 }   
 
 function contactNormal() {
-    document.getElementById("contact-button").style.fontSize = ""
     document.getElementById("contact-button").style.backgroundColor = "";
 }  
 
