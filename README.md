@@ -86,7 +86,7 @@ When designing this website I intended to have a very minimal design that didn't
 I chose to keep one simple page and make usage of modals for anything else needed
 
 ### Home Page - Wireframe for Desktop, Tablet and Mobile.
-![An images showing the website wireframes across different devices](assets/images/wireframes-all-devices.png "Home Page Wireframe")
+![An images showing the website wireframes across different devices](assets/images/wireframes/wireframes-all-devices.pngwireframes-all-devices.png "Home Page Wireframe")
 
 * Mobile
 
