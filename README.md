@@ -131,3 +131,60 @@ For the background of lightmode I chose a simple blue as it felt calm and inviti
 ### WireFrames
 
 I created my wireframes using balsamiq wireframes. I found this simple and effective for assessing the sites appearance as it had a variety of ready available tools representing different parts of a website so I was able to design it how I envisioned it.
+
+## Features
+* This website is a simple to use card game.
+* Users can select the 3 cards to match and after 5 attempts can restart the game to try again.
+* Responsive on all device sizes.
+
+### Existing Features
+
+#### Dark Mode Toggle
+
+![Dark mode toggle shown by a moon and text](assets/images/dark-mode-toggle-feature.png "Dark mode toggle")
+
+
+* The toggle is fixed to the top right of the page at all times.
+* Once clicked the background will turn black and cards will change to a pink and green colour, text will turn white and buttons will turn green. 
+* On light mode the logo is a moon. In dark mode the logo is a sun.
+* Text changes from "Dark mode" to "Light mode" when toggled between.
+* Easily accessible for the user, can be toggled at anytime.
+
+#### Main Feature - Card game
+
+![An image showing the main feature of the website.](assets/images/website-lightmode.png "Main website")
+
+* Main game, when pressing play a modal will pop up wishing the player luck and letting them know to hit next turn after selecting 3 cards.
+* Each card has an array of 9 images which will be called at random when the card is selected.
+* The play button will change to "Next turn!" after the first attempt is made.
+* Matches counter will count as each card selected matches the previous card. This is done by running 2 loops and checking if the card from the inner loop matches the card from the outer loop.
+* Each time 3 cards are selected the game will automatically refresh the page. Progress is saved in local storage so when the page refreshed it increments how many attempts have been taken so far.
+* If more than 5 attempts are taken a modal wil a game over screen will pop up promting you to restart as seen below.
+
+![An image showing the game over screen](assets/images/restart-modal-feature.png "game over")
+
+#### Email API
+![An image showing an email response](assets/images/email-query-feature.png "query")
+![An image showing an email response](assets/images/email-win-feature.png "comgratulations")
+* An automatic response email that would confirm to users they will have their query responded to. It also provides a contact number to escalate. This email will be received when the form within the "Contact us" modal form seen below is completed. The data taken from user input is passed into the email API. This is done by creating a global variable for contact form data and defining it within each mail function.
+![An image showing a form requesting an email and query](assets/images/contact-us-modal-feature.png "query form")
+* The email win feature is set up the same way as above. When a user selected 3 cards and matches 3 in a row a game winning modal will pop up requesting their name and email address. From here an email will be sent confirming the prize and how to claim.
+![An image showing a form requesting an email and query](assets/images/game-winner-modal-feature.png "winner form")
+
+#### Rules modal
+![An image showing a pop up displaying the rules](assets/images/rules-modal-feature.png "rules")
+* A simple modal that pops up when the button is clicked.
+* Displays the rules to the player before they close it to get started on playing the game.
+
+## Features Left to Implement
+
+* Payment
+   
+    * To go more with the gambling sort of nature of the game I would like to make the first 5 attempts free to play and make it so that upon game loss users would have to pay to enter again and get another 5 attempts.
+
+* Different Themes
+
+    * I would like to create a few pages with similar games but different themes, maybe a western theme with desert like colours and cowboy images. Different themes to make it more intersting and appealing to users.
+
+* Different games
+    * I would like the option to add different game modes of things like guess the box. You would see the prize enter the box and the boxes would then quickly moves around the screen, you would have 3 attempts to select the correct box. 
