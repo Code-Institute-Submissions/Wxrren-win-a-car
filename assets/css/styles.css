@@ -467,7 +467,7 @@ margin-right: 3vw;
 display: grid;
 justify-content: left;
 grid-gap: 3px;
-grid-template-columns: repeat(3, 90px);
+grid-template-columns: repeat(3, 70px);
 position: absolute;
 top: 60%;
 left: 50%;
