@@ -45,13 +45,18 @@ function startGame() {
 
     cardArray.forEach((element) => {
         element.addEventListener('click', function () {
+            // BUG fix: Stops more than 3 cards being selected so that attempts don't increment when selecting more than 1
+            if (selectedCards.length >= 3) {
+                event.preventDefault();
+                return;
+            }
             if (selectedCards.length < 3) {
                 let frontFace = element.querySelector('.front.face');
                 frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
                 selectedCards.push(element);
                 matchCounter();
             }
-            if (selectedCards.length == 3) {
+            if (selectedCards.length === 3) {
                 attempts++;
                 localStorage.setItem('attempts', attempts);
                 setTimeout(function() {
@@ -63,10 +68,6 @@ function startGame() {
 
 }
 
-function tryAgain() {
-
-
-}
 
 function restart() {
     attempts = 0;
@@ -164,6 +165,11 @@ function sendQueryEmail(contactForm) {
 
 // Flip card function
 function flipCard(buttonPosition) {
+
+    if (selectedCards.length >= 3) {
+        return;
+    }
     document.getElementById(buttonPosition).classList.add('flip-card')
+
 }
 
