@@ -409,12 +409,12 @@ Forking the repository allows you to make a copy of the original repository on m
 * Information on CSS Grid was provided by: [Complete Guide Grid](https://css-tricks.com/snippets/css/complete-guide-grid/).
 * README Template provided by [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME) & [Markdown Template](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables).
 * Bootstrap was used to help with the card columns + forms. I used[Bootstrap.com](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
-* To help with queryselectors, local storage, parseint and timeout I used [w3schools](https://www.w3schools.com/css/css3_2dtransforms.asp)
+* To help with queryselectors,, modals, local storage, parseint and timeout I used [w3schools](https://www.w3schools.com/css/css3_2dtransforms.asp)
 * For the email API I used [email.js](https://www.emailjs.com)
 * I created this project inline with the course content of [Code Institure](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wZpFDXlxByAgIRT2S39rCz7auVaNWgJ2FF7efFEtX-oT-_qhvkTSiIaApIBEALw_wcB)
 
 ## Acknowledgements
 
-* My mentor Mitko Bachvarov for providing helpful feedback and a link to the Flexbox and grid guide.
+* My mentor Mitko Bachvarov for providing helpful feedback and a link to CSS modals guides on W3 schools.
 * Emily for her support during the project process, assistance with testing and advice on the written portion.
 * Ethan and Olivia for their support with testing the site is working as intended.
