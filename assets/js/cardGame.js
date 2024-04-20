@@ -19,6 +19,7 @@ let contactFormData = null;
 let winnerModal = document.getElementById('winner')
 let goodLuck = document.getElementById('game-start-modal');
 let gameOverModal = document.getElementById('game-over-modal');
+let playButton = document.getElementById('start-game-button')
 
 function startGame() {
 
@@ -27,8 +28,8 @@ function startGame() {
 
         if (goodLuck.classList.contains('game-start-active')) {
             document.querySelector('#close-game-start-button').addEventListener('click', function () {
-            goodLuck.classList.remove('game-start-active')
-        });
+                goodLuck.classList.remove('game-start-active')
+            });
 
         }
     }
@@ -50,29 +51,21 @@ function startGame() {
                 selectedCards.push(element);
                 matchCounter();
             }
+            if (selectedCards.length == 3) {
+                attempts++;
+                localStorage.setItem('attempts', attempts);
+                setTimeout(function() {
+                    location.reload();
+                }, 1000);
+            }
         });
     });
 
 }
 
 function tryAgain() {
-    attempts++;
-    localStorage.setItem('attempts', attempts);
-    location.reload();
 
-    selectedCards = [];
-    document.getElementById('matches').innerHTML = 0;
 
-    cardArray.forEach((element) => {
-        element.addEventListener('click', function () {
-            if (selectedCards.length < 3) {
-                let frontFace = element.querySelector('.front.face');
-                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
-                selectedCards.push(element);
-                matchCounter();
-            }
-        });
-    });
 }
 
 function restart() {
@@ -90,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
         gameOverModal.classList.add('game-over-active');
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('try-again-game-button').disabled = true;
+    }
+    if (attempts >= 1) {
+        playButton.innerHTML="Next turn!";
     }
 });
 
@@ -111,13 +107,13 @@ function matchCounter() {
 function winGame(matchCount) {
     if (matchCount >= 3) {
         winnerModal.classList.add('winner-active');
-        
+
         if (winnerModal.classList.contains('winner-active')) {
-           document.querySelector('#submit').addEventListener('click', function () {
-            winnerModal.classList.remove('winner-active')
-        });
+            document.querySelector('#submit').addEventListener('click', function () {
+                winnerModal.classList.remove('winner-active')
+            });
         }
-       
+
 
         document.getElementById('start-game-button').disabled = true;
         document.getElementById('try-again-game-button').disabled = true;
