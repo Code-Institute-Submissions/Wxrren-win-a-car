@@ -188,3 +188,17 @@ I created my wireframes using balsamiq wireframes. I found this simple and effec
 
 * Different games
     * I would like the option to add different game modes of things like guess the box. You would see the prize enter the box and the boxes would then quickly moves around the screen, you would have 3 attempts to select the correct box. 
+
+    ## Bugs
+
+| Problem         | Action           | Status  |
+| ------------------------------------------------|:--------------------------------------:| -----:|
+| Modals within if statements for win/loss conditions not poppup up.| Global variables getting the id's of the modal created allowing them to be accessed withing any function. From here I selected a classlist with a class made on CSS but not in the HTML tags allowing it to only be open on meeting the condition and selecting the correct class.| Fixed |
+|  Conditional modals not closing using the buttons and onclick function in the HTML tags. | Within the if statement that selects the modal create another if statement checking that variable's class list contains the same one that's used to open the modal. If it does it will select the close modal class made in CSS and make an onclick event listener so that when the close button is selected it will apply the "close" class removing modal from the screen     |   Fixed |
+| Email API not sending user input details.| When strings with set emails, names and texts manually written with strings the emails would send, however, in order for users to receive emails directly to them I needed to connect the form contact values but this would not work or send emails to users. In order to fix this I had to create a global variable. I then passed an argument called "contactForm" into the send email function and within the function created an object containing the name and email address from the contact form where the users data was collected from the form inputs. This would allow email JS to send an email to the user directly with my created template. |    Fixed |
+| Cards still flipping even when 3 cards are selected.| With a simple if statement if the selected cards length are >=3 I put "return;" to make the function exit early and stop other cards being selected.     |    Fixed |
+Cards still counting as attempts when more than 3 cards are selected.| Similar to previous fix. If the selected cards length are >=3 I put "return;" to make the function exit early and stop other cards being selected and stop it from tracking as more than one attempt.    |    Fixed |
+Page refreshing instantly on 3rd card selection before users can see thier cards.| Used javascript "setTime()" function to create a timer delay before the page is refreshed.    |    Fixed |
+
+
+
