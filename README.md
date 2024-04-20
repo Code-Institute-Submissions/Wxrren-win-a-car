@@ -19,7 +19,7 @@ Win a car also has a dark mode toggle for the keen dark mode enthusiasts out the
 
 ### [User Experience (UX)](#user-experience-ux)
 * #### [User Stories](#user-stories)
-* #### [WireFrames](#wire-frames) (View the repository [here](https://github.com/Wxrren/1st-milestone-project-GamerLeague/tree/main/ux/wireframes))
+* #### [WireFrames](#wire-frames) (View the repository [here](https://github.com/Wxrren/win-a-car/tree/main/assets/images/wireframes))
 * #### [Design](#design-1)
 
 ### [Features](#features-1)
@@ -78,3 +78,55 @@ To determine which approach to take with site features I detirmined the goals of
 * Frequent User Goals
     * As a user I want to be able to get started quickly
     * As a user I want to see a simple and easy website with no added bloat since the last attempt.
+
+## Wire Frames
+
+When designing this website I intended to have a very minimal design that didn't distract from the card game. The design was intended to look the same across all devices.
+
+I chose to keep one simple page and make usage of modals for anything else needed
+
+### Home Page - Wireframe for Desktop, Tablet and Mobile.
+![An images showing the website wireframes across different devices](assets/images/wireframes-all-devices.png "Home Page Wireframe")
+
+* Mobile
+
+For the "Rules" and "Contact" button I chose to put these at the top of the page due to limited space on the sides. I want the card game to be the main focus. Modals will pop up in front of the fact game in the middle of the screen.
+
+## Design
+
+### Colour
+
+The colour scheme I wanted for the website was simple and clean. I chose colours to try and follow the 10 commandments of colour and complement the colors see on the site.
+
+For the background of lightmode I chose a simple blue as it felt calm and inviting and for darkmode it was a simple black. The card colours change depending on if it's lightmode or darkmode. For lightmode I chose a lightblue and orange to go together. In darkmode I chose green and pink. Both of these show across from eachother on the colourwheel.
+
+### Website lightmode and darkmode
+
+
+* Light mode
+    ![An image a website with a blue background, light blue buttons and blue and orange cards](assets/images/website-lightmode.png "lightmode Colours")
+    
+
+* Dark mode
+
+![An image showing a black colourwith hex and RGB codes](assets/images/website-darkmode.png "darkmode colours") 
+
+
+* Main colours used on the website:
+    * Background colour: rgba(6, 115, 255, 1) - This was chosen as a nice cool and inviting background that didn't take too much away from the main card game. 
+    * Modals and button colours: #add8e6, #008000,  - This was to keep with the theme of simple and easy to read colours which matches the light mode and dark mode colours of the cards to keep a simple theme.
+    * Dark mode modal button color: #0d6efd - The above colour in darkmode was not very readable with plain white text. I wanted the text to be as regimented as possible so changed the colours.
+    * Light mode card colours: rgba(85, 213, 255, 0.8) + rgba(255, 94, 6, 0.8) - These were chosen in an effort to follow the ten commandments of colour. They are across from eachother on the colour wheel and both compliment eachother making the cards look more enticing.
+    * Dark mode card colours: rgba(92, 255, 85, 0.8) + rgba(246, 3, 221, 0.8). Similar to lightmode these compliment eachother on the colour wheel and are aimed to make the cards look more attractive to players.
+
+### Typography
+
+* Lexend
+    * I chose Lexend from Google Fonts as I felt it kept well enough with the theme of being clear and readable. I wanted all buttons and modals to be as easy to read as possible.
+
+* Bebas Neue
+    * For the dark/light mode toggles I wanted text next to the moon labels to make it as clear as possible what they would do. I chose this font from Google Fonts as it was an easy regimented bold font that stoof out from the rest of the text used elsewhere.
+
+### WireFrames
+
+I created my wireframes using balsamiq wireframes. I found this simple and effective for assessing the sites appearance as it had a variety of ready available tools representing different parts of a website so I was able to design it how I envisioned it.
