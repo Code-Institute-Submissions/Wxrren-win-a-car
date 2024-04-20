@@ -59,6 +59,20 @@ function tryAgain() {
     attempts++;
     localStorage.setItem('attempts', attempts);
     location.reload();
+
+    selectedCards = [];
+    document.getElementById('matches').innerHTML = 0;
+
+    cardArray.forEach((element) => {
+        element.addEventListener('click', function () {
+            if (selectedCards.length < 3) {
+                let frontFace = element.querySelector('.front.face');
+                frontFace.innerHTML = `<img src="${images[getRandomIntInclusive(0, images.length - 1)]}" alt="Random Image" style="width: 100%", height="100%">`;
+                selectedCards.push(element);
+                matchCounter();
+            }
+        });
+    });
 }
 
 function restart() {
