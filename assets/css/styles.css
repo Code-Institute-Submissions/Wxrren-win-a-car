@@ -468,7 +468,7 @@ margin-bottom: 5vh;
 display: grid;
 justify-content: left;
 grid-gap: 3px;
-grid-template-columns: repeat(3, 90px);
+grid-template-columns: repeat(3, auto);
 position: absolute;
 top: 60%;
 left: 50%;
