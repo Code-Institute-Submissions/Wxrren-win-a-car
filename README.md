@@ -9,7 +9,7 @@ Once 5 attempts as been made, a game over screen will pop up and you can hit res
 Win a car also has a dark mode toggle for the keen dark mode enthusiasts out there!
 
  
-![An images showing the website being responsive across multiple devices](assets/images/am-i-responsive-image.png "Resonsive site")
+![An images showing the website being responsive across multiple devices](assets/images/am-i-responsive.png "Resonsive site")
 
 
 [You can visit the Win a car website here](https://wxrren.github.io/win-a-car/)
