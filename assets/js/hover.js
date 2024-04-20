@@ -52,23 +52,19 @@ function closeContactNormal() {
 /*-----------------------------------------------Game Buttons --------------------------------------- */
 //Start game hover
 function startGameHover() {
-    document.getElementById("start-game-button").style.fontSize = "150%"
     document.getElementById("start-game-button").style.backgroundColor = "red";
 }
 
 function startGameNormal() {
-    document.getElementById("start-game-button").style.fontSize = ""
     document.getElementById("start-game-button").style.backgroundColor = "";
 }
 
 //Try again hover
 function tryAgainHover() {
-    document.getElementById("try-again-game-button").style.fontSize = "150%"
     document.getElementById("try-again-game-button").style.backgroundColor = "red";
 }
 
 function tryAgainNormal() {
-    document.getElementById("try-again-game-button").style.fontSize = ""
     document.getElementById("try-again-game-button").style.backgroundColor = "";
 }
 
