@@ -385,3 +385,36 @@ Forking the repository allows you to make a copy of the original repository on m
 5. Change the current working directory to the location where you want the cloned directory to be created.
 6. Type **GIT CLONE**, and then paste the URL you copied earlier.
 7. Press Enter to create your local clone.
+
+## Credits
+
+### Images:
+
+* Sun and moon logo taken from [youtube tutorial](https://www.youtube.com/watch?v=9LZGB3OLXNQ)
+* Oranges picture taken from [grocerbasket.co.uk](https://grocerybasket.co.uk/product/large-orange-class1-per-kg/)
+* Strawberry picture taken from [Pinterest](https://www.pinterest.co.uk/pin/605241637399137511/)
+* Watermelon picture taken from [cleanpng.com](https://www.cleanpng.com/png-watermelon-seedless-fruit-dry-taste-3788605/)
+* Car picture taken from [milesperhr.com](https://milesperhr.com/2023-bmw-m5-competition-review/)
+* Grapes picture taken from [organicseeds4you.com](https://www.organicseeds4you.com/ru/home/black-grape-seeds-vitis-vinifera.html)
+* Corn picture taken from [Pinterest.com](https://in.pinterest.com/pin/corn-png-images--577023771027355824/)
+* Chilli picture taken from [pngtree.com](https://pngtree.com/so/chilli)
+* Blueberry picture taken from [luckyberry.co.il](https://luckyberry.co.il/en/our-fruits/)
+* Apple picture taken from [Amazon](https://www.amazon.co.uk/Red-Apples-10-kg-10/dp/B0B7QN4H7R)
+
+### Content and Resources
+
+* All content was written by myself.
+* Information on how to make a darkmode toggle was learned from a [youtube tutorial](https://www.youtube.com/watch?v=9LZGB3OLXNQ). I used a different method to achieve this with an event listener and additional features such as changing text. I also targeted in the body in a different way.
+* Information on flexbox was provided by: [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+* Information on CSS Grid was provided by: [Complete Guide Grid](https://css-tricks.com/snippets/css/complete-guide-grid/).
+* README Template provided by [Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME) & [Markdown Template](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables).
+* Bootstrap was used to help with the card columns + forms. I used[Bootstrap.com](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+* To help with queryselectors, local storage, parseint and timeout I used [w3schools](https://www.w3schools.com/css/css3_2dtransforms.asp)
+* For the email API I used [email.js](https://www.emailjs.com)
+* I created this project inline with the course content of [Code Institure](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wZpFDXlxByAgIRT2S39rCz7auVaNWgJ2FF7efFEtX-oT-_qhvkTSiIaApIBEALw_wcB)
+
+## Acknowledgements
+
+* My mentor Mitko Bachvarov for providing helpful feedback and a link to the Flexbox and grid guide.
+* Emily for her support during the project process, assistance with testing and advice on the written portion.
+* Ethan and Olivia for their support with testing the site is working as intended.
