@@ -469,7 +469,7 @@ justify-content: left;
 grid-gap: 3px;
 grid-template-columns: repeat(3, 90px);
 position: absolute;
-top: 51%;
+top: 56%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
