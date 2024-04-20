@@ -367,11 +367,11 @@ margin-right: 38vw;
 
 .card-game-container {
 display: grid;
-justify-content: center;
-grid-gap: 30px;
+justify-content: left;
+grid-gap: 8px;
 grid-template-columns: repeat(3, auto);
 position: absolute;
-top: 49%;
+top: 51%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -382,12 +382,12 @@ justify-content:space-between;
 align-items: center;
 margin-left: 38vw;
 margin-right: 38vw;
-margin-top: 32vh;
+margin-top: 28vh;
 }
 
 .card {
-height: calc(140px / 2 * 3);
-width: 140px;
+height: calc(110px / 2 * 3);
+width: 100px;
 border-radius: 15px;
 background: var(--card-background-color);
 cursor: pointer;
@@ -465,14 +465,14 @@ margin-bottom: 5vh;
 }
 
 .card-game-container {
-display: grid;
-justify-content: left;
-grid-gap: 3px;
-grid-template-columns: repeat(3, auto);
-position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%, -50%);
+  display: grid;
+  justify-content: left;
+  grid-gap: 8px;
+  grid-template-columns: repeat(3, auto);
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .score-container {
