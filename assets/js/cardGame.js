@@ -60,7 +60,7 @@ function startGame() {
                 localStorage.setItem('attempts', attempts);
                 setTimeout(function() {
                     location.reload();
-                }, 500); //
+                }, 500); 
             }
         });
     });
