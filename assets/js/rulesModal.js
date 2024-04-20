@@ -1,4 +1,4 @@
-let openRules = document.getElementById("rules-modal")
+let openRules = document.getElementById("rules-modal");
 
 function rulesModal() {
     openRules.classList.add('rules-active');

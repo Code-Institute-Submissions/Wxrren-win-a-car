@@ -1,4 +1,4 @@
-let openContact = document.getElementById("contact-modal")
+let openContact = document.getElementById("contact-modal");
 
 function contactModal() {
     openContact.classList.add('contact-active');
