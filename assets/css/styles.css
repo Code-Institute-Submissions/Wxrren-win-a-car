@@ -484,7 +484,7 @@ margin-top: 68vh;
 }
 
 .card {
-height: calc(90px / 2 * 3);
+height: calc(60px / 2 * 3);
 width: 90px;
 border-radius: 15px;
 background: var(--card-background-color);
