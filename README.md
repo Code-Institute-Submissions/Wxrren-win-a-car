@@ -200,5 +200,188 @@ I created my wireframes using balsamiq wireframes. I found this simple and effec
 Cards still counting as attempts when more than 3 cards are selected.| Similar to previous fix. If the selected cards length are >=3 I put "return;" to make the function exit early and stop other cards being selected and stop it from tracking as more than one attempt.    |    Fixed |
 Page refreshing instantly on 3rd card selection before users can see thier cards.| Used javascript "setTime()" function to create a timer delay before the page is refreshed.    |    Fixed |
 
+## Testing
+
+Testing consisted of using the W3C Markup and CSS Validator to go through each page of the project and validate that the code has no errors. They can be located below: 
+
+* [W3C Markup Validator:](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [JSHint](http://jshint.com/)
+
+### Validation Results
+
+<details>
+<summary>index Page</summary>
+
+![HTML checker showing no errors on the index page.](assets/images/html-validator.png "index")
+
+</details>
+
+<details>
+<summary>CSS</summary>
+
+![HTML checker showing no errors on the CSS Stylesheet.](assets/images/css-validator.png "CSS")
+
+</details>
+
+<details>
+<summary>Javascript</summary>
+
+![HTML checker showing no errors on the javascript Stylesheet.](assets/images/javascript-validation.png "Javascript")
+* NOTE: jshint shows undefinined variables and unused variables. These variables are actually functions that are being called elsewhere. It is also an email.js API file that jshint is not recognising. Other than this, no other errors are present.
+
+</details>
+
+<details>
+<summary>Javascript hover file</summary>
+
+![HTML checker showing no errors on the javascript Stylesheet.](assets/images/javascript-hover-validation.png "Javascript")
+* NOTE: jshint shows undefinined variables and unused variables. These variables are actually functions that are being called elsewhere. It is also an email.js API file that jshint is not recognising. Other than this, no other errors are present.
+
+</details>
+
+<details>
+<summary>Javascript contact modal file</summary>
+
+![HTML checker showing no errors on the javascript Stylesheet.](assets/images/javascript-contact-modal-validation.png "Javascript")
+* NOTE: jshint shows undefinined variables and unused variables. These variables are actually functions that are being called elsewhere. It is also an email.js API file that jshint is not recognising. Other than this, no other errors are present.
+
+</details>
+
+<details>
+<summary>Javascript rules modal file</summary>
+
+![HTML checker showing no errors on the javascript Stylesheet.](assets/images/javascript-rules-modal-validation.png"Javascript")
+* NOTE: jshint shows undefinined variables and unused variables. These variables are actually functions that are being called elsewhere. It is also an email.js API file that jshint is not recognising. Other than this, no other errors are present.
+
+</details>
+
+<details>
+<summary>Javascript dark mode file</summary>
+
+![HTML checker showing no errors on the javascript Stylesheet.](assets/images/javascript-toggle-validation.png "Javascript")
+
+</details>
 
 
+
+### Manual Testing
+
+* The website was tested on Google Chrome, Opera GX and Safari browsers.
+* The website was tested on a Desktop, Laptop, Tablet and x2 phones - one android and one apple.
+* Google Dev tools was used to test the responsiveness of the site on different screens.
+
+### Tests performed
+
+| Test        | Status           | 
+| ------------- |:-------------:| 
+| Emails to user send following input details.      | Pass | 
+| Mobile and tablet versions of the game are responsive and work exactly as the desktop version works.    | Pass      |
+| Modals pop up on screen when buttons are pressed or conditions such as starting the game, losing game and winning the game are met | Pass      |
+| Site works correctly on Android mobile device. | Pass      |
+| Site works correctly on Apple mobile device. | Pass      |
+| Site works correctly on Apple tablet device. | Pass      |
+| Dark mode toggles to a black background with different colour cards and then back to light mode when toggled again | Pass      |
+| Page refreshes and correctly counts each attempt made| Pass      |
+| Matches are correctly counted and winning by getting 3 is possible  | Pass      |
+| Cards can only be selected a maximum of 3 times and it doesn't increase as further attempts if you try to select more | Pass      |
+Page refreshed 0.5 miliseconds after 3 cards are selected | Pass      |
+Hover functions work as intended for buttons and toggles| Pass      |
+
+--- 
+
+### Lighthouse Report
+
+* Mobile Results
+
+<details>
+<summary>Home Page</summary>
+
+![Lighthouse scores for index page on mobile.](assets/images/lighthouse-validation-mobile.png "Index mobile")
+
+</details>
+
+* Desktop Results
+
+<details>
+<summary>Home Page</summary>
+
+![Lighthouse scores for index page on mobile.](assets/images/lighthouse-validation-desktop.png "Index desktop")
+
+</details>
+
+## Technologies Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+## Frameworks, Libraries & Programs Used
+
+* [Visual Studio Code](https://code.visualstudio.com) 
+    * Used to write the code/README.
+
+* [Git](https://git-scm.com)
+    *  Tracking changes in my course code and pushing them to github.
+
+* [Github](https://github.com)
+    * To store my code/files and deploy my website.
+
+* [Google Fonts](https://fonts.google.com)
+    * Used for importing my main font for the website
+
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    * Used for making web development faster. My usage was for card columns + forms.
+
+* [Icons8](https://icons8.com/icons)
+    * Hamburger icon for mobile Nav bar toggler.
+
+* [Am I Responsive](https://ui.dev/amiresponsive)
+    * Mock picture for README file.
+
+## Deployment and local Development.
+
+*  ### GitHub Pages
+
+I used GitHub to deploy the live version of the website. To do this I had to: 
+
+1.  Log in to GitHub and locate the GitHub win a car [Repository](https://github.com/Wxrren/win-a-car)
+2.  Locate the "Settings" button at the top of the repository as shown here:
+
+![An image showing the repository page with settings highlighted.](assets/images/repository-settings-location.png "Settings")
+
+3. look down the "Code and automation" area until you find ["Pages"](https://github.com/Wxrren/win-a-car/settings/pages) as shown below:
+
+![An image showing the repository page with pages highlighted.](assets/images/site-link-github-pages.png "Pages")
+
+4. Under "Source", click the dropdown menu "None" and select "Main" and click "Save".
+
+5. The page will automatically refresh.
+
+6. Scroll back to locate the now-published [site link](https://wxrren.github.io/win-a-car/) in the "GitHub Pages" section as seen below:
+
+![An image showing the repository page with pages highlighted.](assets/images/site-link-github-pages.png "Site Link")
+
+* ### Forking the GitHub Repository
+
+Forking the repository allows you to make a copy of the original repository on my GitHub account to view and change without affecting the original repository. To achieve this, follow these steps:
+
+1. Log in to GitHub and locate the GitHub GamerLeague [Repository](https://wxrren.github.io/win-a-car/)
+2. At the top of the Repository(above the about section) locate "Fork" button.
+
+![An image showing the repository page with Fork highlighted.](assets/images/fork-location.png "Fork Location")
+
+3. Once complete you should have a copy of the original repository in your GitHub account.
+
+* ### Local Clone
+
+1. Log in to GitHub and locate the GitHub GamerLeague [Repository](https://wxrren.github.io/win-a-car/)
+2. Above the list of files, click  Code.
+
+![An image showing the repository page with Fork highlighted.](assets/images/code.png "clone")
+
+3. Click on the code button, select clone with any of the options provided (These options are HTTPS, SSH or GitHub CLI) and copy the link shown.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be created.
+6. Type **GIT CLONE**, and then paste the URL you copied earlier.
+7. Press Enter to create your local clone.
