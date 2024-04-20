@@ -46,3 +46,35 @@ Win a car also has a dark mode toggle for the keen dark mode enthusiasts out the
 
 ### [Acknowledgements](#acknowledgements-1)
 ------
+
+## User Experience (UX)
+
+There is a clear navigation in the nav bar which directs you on where to join the league or sign up to competitions. It directs you to a tournaments gallery Where pictures of tournaments others have competed in can be viewed.
+
+The website is a simple single page that makes use of modals instead of diverting to other pages. When selecting the modals users can either check the rules, submit a query/complaint and enter their email details should they win the game.
+
+Users can also switch between light and dark mode by selecting the moon logo on the top right corner. 
+
+To make the user experience easy - I wanted the site to have:
+
+* A simple call to action in the form of the "Play!" button which also turns to a "Next Turn" button after the 1st attempts are made.
+* A simple UI. I wanted minimal buttons appearing on the screen to make it less cluttered focussing only on what they need to play the game or ask any questions.
+* Fast game that's responsive to user actions.
+
+## User Stories
+To determine which approach to take with site features I detirmined the goals of different users from first time through to frequent users.
+
+### User
+
+* First time User Goals
+    * As a user I want to understand the main purpose of the site and get straight into the game.
+    * As a user I want to understand the rules of how I can play the game.
+    * As a user I want to be able to easily navigate the site.
+    
+* Returning User Goals
+    * As a user I want to be get straight into the action with playing
+    * As a user I want to be able to easily contact and provide feedback if something goes wrong.
+    
+* Frequent User Goals
+    * As a user I want to be able to get started quickly
+    * As a user I want to see a simple and easy website with no added bloat since the last attempt.
