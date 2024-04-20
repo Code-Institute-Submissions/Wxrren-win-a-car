@@ -47,7 +47,6 @@ function startGame() {
         element.addEventListener('click', function () {
             // BUG fix: Stops more than 3 cards being selected so that attempts don't increment when selecting more than 1
             if (selectedCards.length >= 3) {
-                event.preventDefault();
                 return;
             }
             if (selectedCards.length < 3) {
@@ -61,7 +60,7 @@ function startGame() {
                 localStorage.setItem('attempts', attempts);
                 setTimeout(function() {
                     location.reload();
-                }, 1000);
+                }, 500); //
             }
         });
     });
